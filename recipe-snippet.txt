@@ -1,0 +1,19 @@
+<section class="recipe">
+            <div class="rc_block">
+                <img src="" alt="">
+                <h3 class="title"><a href="" target="_blank"></a>
+                </h3>
+            </div>
+            <div class="ingredients">
+                <h4 class="title">Ingredients</h4>
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="method">
+                <h4 class="title">Method</h4>
+                <ol>
+                    <li></li>
+                </ol>
+            </div>
+        </section>
