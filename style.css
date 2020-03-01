@@ -18,7 +18,7 @@ body {
 button{
     border-radius: 10px;
     color: beige;
-    background: radial-gradient(#000000, transparent);
+    background: #0d0d13;
     border: 1px solid;
     padding: 10px 20px;
     font-family: 'Caveat Brush'
@@ -84,13 +84,50 @@ li{
     font-family: 'Caveat Brush';
 }
 
+#home{
+    background: #0d0d13;
+    
+}
+
+#break{
+    background: #fca644;
+}
+
+#soups{
+    background: #66400e;
+}
+
+#veg{
+    background: #247021;
+}
+
+#fish{
+    background: #232170;
+}
+
+#chick{
+    background: #be5a5a;
+}
+
+#pork{
+    background: #af1c1c;
+}
+
+#beef{
+    background: #490606;
+}
+
+#dess{
+    background: #ec48b5;
+}
+
 .wrapper{
     display: grid;
     
     grid-template-columns: 1fr 10fr;
     grid-template-areas: 
-    "logo header "
-    "welcome welcome";
+    "logo welcome"
+    "header header ";
     
 }
 
@@ -122,7 +159,6 @@ li{
     text-align: center;
 }
 
-
 .footer{
     grid-area: footer;
     text-align: center;
@@ -136,27 +172,19 @@ li{
     margin: 0;
     padding: 0;
     list-style: none;
-    font-size: 1.5em;
     font-weight: normal;
     
 }
 
 .menu-list li{
-    padding: 5px;
-}
-
-.menu-list a{
-    display: block;
     border-radius: 10px;
     border: 1px solid;
-    background: radial-gradient(#000000, transparent);    
-    text-decoration: none;
-    color: beige;
-    padding: 0;        
+    padding: 5px;
+    font-size: 30px;
     text-align: center;
-    
-    
+    margin: 5px;
 }
+
 
 [aria-controls="menu-list"]{
     display: none;
