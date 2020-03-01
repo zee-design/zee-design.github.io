@@ -166,7 +166,7 @@ li{
     grid-area: recipe;
     display: grid;
     grid-auto-columns: 25% 1fr;
-    grid-template-rows: 0.1fr 25% 1fr;
+    grid-template-rows: 5% 25% 1fr;
     grid-template-areas: 
     "cat_name cat_name"
     "rc_block ingredients"
