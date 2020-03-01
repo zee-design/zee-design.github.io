@@ -60,7 +60,7 @@ img {
 a {
     text-decoration: none;
     color: peru;
-    font-size: 1.2em;
+    font-size: ;
     padding: 5px;
 }
 
@@ -82,13 +82,12 @@ h4 {
 
 .title {
     font-family: 'Caveat Brush';
-    font-size: 1.6em;
+    font-size: 32px;
 }
 
 li {
     text-align: justify;
     padding: 10px;
-    font-size: 1.2em;
 }
 
 #home {
@@ -151,15 +150,17 @@ li {
     justify-self: left;
     align-self: center;
     font-size: 3em;
+    text-align: center;
 }
 
 .intro {
     grid-area: intro;
-    font-size: 1.2em;
+    text-align: center;
 }
 
 .comment {
     grid-area: comment;
+    text-align: center;
 }
 
 .footer {
@@ -193,13 +194,16 @@ li {
     grid-area: recipe;
     display: grid;
     grid-auto-columns: 25% 1fr;
-    grid-template-areas: "cat_name cat_name" "rc_block ingredients" "method method";
+    grid-template-areas: 
+    "cat_name cat_name"
+    "rc_block ingredients"
+    "method method";
 }
 
 .cat_name {
     grid-area: cat_name;
     justify-self: center;
-    font-size: 30px;
+    font-size: 38px;
 }
 
 .rc_block {
@@ -235,11 +239,25 @@ li {
 .rc_block {
     grid-area: rc_block;
     max-width: 100%;
-    align-self: top;
     justify-self: center;
 }
 
 @media (max-width: 1000px) {
+    .logo{
+        align-self: center;
+        justify-self: right;
+    }
+
+    .favs{
+        align-self: center;
+        justify-self: left;
+        font-size: 2em;
+    }
+
+    button{
+        align-self: center;
+    }
+
     .menu {
         padding: 20px;
         perspective: 800px;
@@ -272,13 +290,25 @@ li {
         font-size: 20px;
     }
     .recipe {
-        grid-template-areas: "cat_name cat_name" "rc_block ingredients" "method method";
+        grid-template-areas: 
+        "cat_name cat_name"
+        "rc_block ingredients"
+        "method method";
+    }
+
+    .rc_block{
+        align-self: center;
     }
 }
 
 @media (max-width: 700px) {
+
     .recipe {
-        grid-template-areas: "cat_name cat_name" "rc_block rc_block" "ingredients ingredients" "method method";
+        grid-template-areas: 
+        "cat_name cat_name"
+        "rc_block rc_block"
+        "ingredients ingredients"
+        "method method";
     }
     .ingredients, .method {
         margin: 5px;
@@ -291,11 +321,20 @@ li {
     }
     .menu-list a {
         padding: 5px;
-        font-size: 1em;
     }
+
+    .logo{
+        align-self: center;
+    }
+
+    
     .recipe {
         grid-template-columns: 100%;
-        grid-template-areas: "cat_name" "rc_block" "ingredients" "method";
+        grid-template-areas: 
+        "cat_name"
+        "rc_block"
+        "ingredients"
+        "method";
     }
     .ingredients, .method {
         margin: 5px;
