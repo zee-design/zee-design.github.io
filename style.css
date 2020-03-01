@@ -1,6 +1,6 @@
 * {
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
@@ -8,48 +8,56 @@
 body {
     font-family: 'Open Sans', sans-serif;
     color: beige;
-    background-color: darkgrey;
+    background-color: #806243;
     background-image: url(img/background.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-} 
+}
 
-button{
+button {
     border-radius: 10px;
     color: beige;
     background: #0d0d13;
     border: 1px solid;
     padding: 10px 20px;
     font-family: 'Caveat Brush'
-    
 }
 
 #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 10px; /* Place the button at the bottom of the page */
-    right: 10px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    cursor: pointer; /* Add a mouse pointer on hover */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 10px;
+    /* Place the button at the bottom of the page */
+    right: 10px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
     width: 80px;
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 20px; /* Increase font size */
-    
-  }
-  
-  #myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
-  }
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 20px;
+    /* Increase font size */
+}
 
-img{
+#myBtn:hover {
+    background-color: #555;
+    /* Add a dark-grey background on hover */
+}
+
+img {
     max-width: 100%;
     background-color: #0000009a;
     border-radius: 10px;
 }
 
-a{
+a {
     text-decoration: none;
     color: peru;
     font-size: 1.2em;
@@ -61,77 +69,68 @@ h1, h2, h3, p {
     padding: 0;
 }
 
-h3{
-    font-size: 26px;
+h3 {
     background-color: #0000009a;
     border-radius: 10px;
-    
 }
 
-h4{
-    font-size: 25px;
+h4 {
     font-weight: normal;
     margin: 0;
     padding-left: 20px;
 }
 
-li{
+.title {
+    font-family: 'Caveat Brush';
+    font-size: 1.6em;
+}
+
+li {
     text-align: justify;
     padding: 10px;
+    font-size: 1.2em;
 }
 
-.title{
-    font-family: 'Caveat Brush';
-}
-
-#home{
+#home {
     background: #0d0d13;
-    
 }
 
-#break{
+#break {
     background: #fca644;
 }
 
-#soups{
+#soups {
     background: #66400e;
 }
 
-#veg{
+#veg {
     background: #247021;
 }
 
-#fish{
+#fish {
     background: #232170;
 }
 
-#chick{
+#chick {
     background: #be5a5a;
 }
 
-#pork{
+#pork {
     background: #af1c1c;
 }
 
-#beef{
+#beef {
     background: #490606;
 }
 
-#dess{
+#dess {
     background: #ec48b5;
 }
 
-
-
-
-
-.welcome{
+.welcome {
     display: grid;
-    grid-template-columns: 37% 1fr;
-    grid-template-areas: 
-    "logo favs"
-    "intro intro"
-    "comment comment";
+    grid-template-columns: 30% 1fr;
+    grid-template-areas: "logo favs" "intro intro" "comment comment";
     gap: 10px;
     max-width: 100%;
     font-size: 24px;
@@ -141,43 +140,43 @@ li{
     background-color: rgba(53, 11, 0, 0.692);
 }
 
-.logo{
+.logo {
     grid-area: logo;
     background-color: transparent;
     justify-self: right;
 }
-.favs{
-grid-area: favs;
-justify-self: left;
-align-self: center;
+
+.favs {
+    grid-area: favs;
+    justify-self: left;
+    align-self: center;
+    font-size: 3em;
 }
 
-.intro{
-grid-area:  intro;
+.intro {
+    grid-area: intro;
+    font-size: 1.2em;
 }
 
-.comment{
+.comment {
     grid-area: comment;
 }
 
-.footer{
+.footer {
     grid-area: footer;
     text-align: center;
 }
 
-
-
-.menu-list{
+.menu-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
     margin: 20;
     padding: 0;
     list-style: none;
     font-weight: normal;
-    
 }
 
-.menu-list li{
+.menu-list li {
     border-radius: 10px;
     border: 1px solid;
     padding: 5px;
@@ -186,38 +185,32 @@ grid-area:  intro;
     margin: 5px;
 }
 
-
-[aria-controls="menu-list"]{
+[aria-controls="menu-list"] {
     display: none;
 }
 
-.recipe{
+.recipe {
     grid-area: recipe;
     display: grid;
     grid-auto-columns: 25% 1fr;
-    grid-template-areas: 
-    "cat_name cat_name"
-    "rc_block ingredients"
-    "method method";
-    
+    grid-template-areas: "cat_name cat_name" "rc_block ingredients" "method method";
 }
 
-.cat_name{
+.cat_name {
     grid-area: cat_name;
     justify-self: center;
     font-size: 30px;
 }
 
-.rc_block{
+.rc_block {
     grid-area: rc_block;
     padding: 20px;
     justify-self: center;
     text-align: center;
     margin: 10px;
-    
 }
 
-.ingredients{
+.ingredients {
     grid-area: ingredients;
     padding: 20px;
     background-color: #0000009a;
@@ -225,13 +218,13 @@ grid-area:  intro;
     margin: 10px;
 }
 
-.ingredients ul{
+.ingredients ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5px 50px;
 }
 
-.method{
+.method {
     grid-area: method;
     padding: 20px;
     background-color: #0000009a;
@@ -244,96 +237,70 @@ grid-area:  intro;
     max-width: 100%;
     align-self: top;
     justify-self: center;
-    
-    
 }
 
-
-
-
-@media (max-width: 1000px){
-    .menu{
+@media (max-width: 1000px) {
+    .menu {
         padding: 20px;
         perspective: 800px;
     }
-
-    [aria-controls="menu-list"]{
+    [aria-controls="menu-list"] {
         display: block;
         margin-bottom: 10px;
     }
-    .menu ul{
+    .menu ul {
         max-height: 0;
         overflow: hidden;
         transform: rotateX(90deg);
         transition: all 0.5s;
     }
-
-    [aria-expanded="true"] ~ ul {
+    [aria-expanded="true"]~ul {
         display: grid;
         max-height: 500px;
         transform: rotateX(0);
     }
-
-    [aria-expanded="false"] .close{
+    [aria-expanded="false"] .close {
         display: none;
     }
-
-    [aria-expanded="true"] .close{
+    [aria-expanded="true"] .close {
         display: inline-block;
     }
-
-    [aria-expanded="true"] .open{
+    [aria-expanded="true"] .open {
         display: none;
     }
-    button{
+    button {
         font-size: 20px;
     }
-    .recipe{
-        grid-template-areas:
-        "cat_name cat_name" 
-        "rc_block ingredients"
-        "method method";
+    .recipe {
+        grid-template-areas: "cat_name cat_name" "rc_block ingredients" "method method";
     }
-    
 }
 
 @media (max-width: 700px) {
-    .recipe{
-        grid-template-areas: 
-        "cat_name cat_name"
-        "rc_block rc_block"
-        "ingredients ingredients"
-        "method method";
+    .recipe {
+        grid-template-areas: "cat_name cat_name" "rc_block rc_block" "ingredients ingredients" "method method";
     }
-    .ingredients, .method{
+    .ingredients, .method {
         margin: 5px;
     }
 }
 
 @media (max-width: 500px) {
-    .menu-list li{
+    .menu-list li {
         padding: 5px;
-
     }
-    .menu-list a{
+    .menu-list a {
         padding: 5px;
         font-size: 1em;
     }
-    
-    
-    .recipe{
+    .recipe {
         grid-template-columns: 100%;
-        grid-template-areas: 
-        "cat_name"
-        "rc_block"
-        "ingredients"
-        "method";
+        grid-template-areas: "cat_name" "rc_block" "ingredients" "method";
     }
-    .ingredients, .method{
+    .ingredients, .method {
         margin: 5px;
     }
-    
-    .ingredients ul{
+    .ingredients ul {
         display: block;
     }
 }
