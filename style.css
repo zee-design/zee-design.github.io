@@ -282,7 +282,7 @@ li{
         grid-template-areas: 
         "header"
         "welcome welcome"
-        "today logo";
+        "logo logo";
         grid-template-columns: 1fr 3fr;
         
     }
@@ -292,11 +292,23 @@ li{
     .menu-list a{
         padding: 5px;
     }
-    .ingredients, .method{
-        margin: 5px;
-    }
     #myBtn{
         width: 60px;
         font-size: 16px;
+    }
+    .recipe{
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "cat_name"
+        "rc_block"
+        "ingredients"
+        "method";
+    }
+    .ingredients, .method{
+        margin: 5px;
+    }
+    
+    .ingredients ul{
+        display: block;
     }
 }
