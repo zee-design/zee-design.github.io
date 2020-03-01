@@ -8,8 +8,8 @@
 body {
     font-family: 'Open Sans', sans-serif;
     color: beige;
-    background-color: lightgrey;
-    background-image: url(img/mobile-background1.jpg);
+    background-color: darkgrey;
+    background-image: url(img/background.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -121,42 +121,43 @@ li{
     background: #ec48b5;
 }
 
-.wrapper{
+
+
+
+
+.welcome{
     display: grid;
-    
-    grid-template-columns: 1fr 10fr;
+    grid-template-columns: 37% 1fr;
     grid-template-areas: 
-    "logo welcome"
-    "header header ";
-    
+    "logo favs"
+    "intro intro"
+    "comment comment";
+    gap: 10px;
+    max-width: 100%;
+    font-size: 24px;
+    justify-items: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(53, 11, 0, 0.692);
 }
 
 .logo{
     grid-area: logo;
-    width: 100%;
     background-color: transparent;
-    align-self: center;
+    justify-self: right;
+}
+.favs{
+grid-area: favs;
+justify-self: left;
+align-self: center;
 }
 
-.header{
-    grid-area: header;
-    display: grid;
-    align-self: center;
-        
+.intro{
+grid-area:  intro;
 }
 
-.welcome{
-    grid-area: welcome;
-    display: grid;
-    max-width: 100%;
-    font-size: 24px;
-    justify-items: center;
-    padding: 0;
-}
-
-.welcome>* {
-    padding: 20px;
-    text-align: center;
+.comment{
+    grid-area: comment;
 }
 
 .footer{
@@ -169,7 +170,7 @@ li{
 .menu-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-    margin: 0;
+    margin: 20;
     padding: 0;
     list-style: none;
     font-weight: normal;
@@ -251,10 +252,6 @@ li{
 
 
 @media (max-width: 1000px){
-    .wrapper{
-        grid-template-columns: 1fr 3fr;
-    }
-    
     .menu{
         padding: 20px;
         perspective: 800px;
@@ -301,12 +298,6 @@ li{
 }
 
 @media (max-width: 700px) {
-    .wrapper{
-        grid-template-areas: 
-        "header"
-        "welcome logo";
-        grid-template-columns: 1fr 3fr;
-    }
     .recipe{
         grid-template-areas: 
         "cat_name cat_name"
@@ -320,14 +311,6 @@ li{
 }
 
 @media (max-width: 500px) {
-    .wrapper{
-        grid-template-areas: 
-        "header"
-        "welcome welcome"
-        "logo logo";
-        grid-template-columns: 1fr 3fr;
-        
-    }
     .menu-list li{
         padding: 5px;
 
