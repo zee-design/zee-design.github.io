@@ -15,17 +15,17 @@ html, body{
 
 #main{
     overflow: auto;
-    padding-bottom: 200px;
+    padding-bottom: 300px;
 }
 
 #footer{
     background-color: rgba(53, 11, 0, 0.692);
     position: relative;
-    height: 200px;
-    margin-top: -200px;
+    height: 300px;
+    margin-top: -300px;
     clear: both;
     text-align: center;
-    padding: 20px 0;
+    padding: 50px 0;
     font-size: 36px;
 }
 
@@ -41,7 +41,7 @@ html, body{
 body {
     font-family: 'Open Sans', sans-serif;
     color: beige;
-    background-color: #806243;
+    background-color: #805F43;
     background-image: url(img/background.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -315,27 +315,24 @@ li {
 
 
   @media (max-width: 1000px) {
+
     .logo{
         align-self: center;
         justify-self: right;
     }
-
     .favs{
         align-self: center;
         justify-self: left;
         font-size: 2em;
     }
-
     button{
         align-self: center;
         font-size: 20px;
     }
-
     #navButton{
         display: block;
         margin: 0 0 0 50px;
     }
-
     .Menu {
         padding: 20px;
         perspective: 800px;
@@ -348,8 +345,7 @@ li {
         display: block;
         margin-bottom: 10px;
     }
-    
-    [aria-expanded="true"]~Menu {
+        [aria-expanded="true"]~Menu {
         display: grid;
         max-height: 500px;
         transform: rotateX(0);
@@ -363,23 +359,19 @@ li {
     [aria-expanded="true"] .open {
         display: none;
     }
-    
-    .cat_name{
+        .cat_name{
         padding: 0;
         margin-top: -30px;
     }
-
     .recipe {
         grid-template-areas: 
         "cat_name cat_name"
         "rc_block ingredients"
         "method method";
     }
-
     .rc_block{
         align-self: center;
     }
-
 }
 
 @media (max-width: 700px) {
@@ -394,9 +386,25 @@ li {
     .ingredients, .method {
         margin: 5px;
     }
+    #main {
+        overflow: auto;
+        padding-bottom: 450px;
+    }
+    
+    #footer {
+        background-color: rgba(53, 11, 0, 0.692);
+        position: relative;
+        height: 450px;
+        margin-top: -450px;
+        clear: both;
+        text-align: center;
+        padding: 50px 0;
+        font-size: 36px;
+    }
 }
 
 @media (max-width: 500px) {
+
     .menu-list li {
         padding: 5px;
     }
@@ -407,8 +415,6 @@ li {
     .logo{
         align-self: center;
     }
-
-    
     .recipe {
         grid-template-columns: 100%;
         grid-template-areas: 

@@ -3,7 +3,6 @@
 
     <head>
         <title>Zee's Favourites</title>
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/html, charset-UTF-8">
         <meta charset="utf-8">
@@ -11,7 +10,14 @@
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
             integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link href="style.css" type="text/css" rel="stylesheet">
-        <link rel="icon" type="image/ico" href="img/favicon.ico">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#805f43">
+        <meta name="msapplication-TileColor" content="#805f43">
+        <meta name="theme-color" content="#805f43">
     </head>
 
     <body id="main">
@@ -36,7 +42,7 @@
             <input name="tabbed" id="tabbed1" type="radio" checked>
             <section>
                 <h1>
-                    <label for="tabbed1" id="home" class="Menu">Home</label>
+                    <label for="tabbed1" id="home" aria-expanded="false" class="Menu">Home</label>
                 </h1>
                 <div class="home">
                     <section class="recipe">
@@ -287,7 +293,7 @@
             <input name="tabbed" id="tabbed2" type="radio">
             <section>
                 <h1>
-                    <label for="tabbed2" id="break" class="Menu">Breakfast</label>
+                    <label for="tabbed2" id="break" aria-expanded="false" class="Menu">Breakfast</label>
                 </h1>
                 <div class="breakfast">
                     <section class="recipe">
@@ -519,7 +525,7 @@
             <input name="tabbed" id="tabbed3" type="radio">
             <section>
                 <h1>
-                    <label for="tabbed3" id="soups" class="Menu">Soups</label>
+                    <label for="tabbed3" id="soups" aria-expanded="false" class="Menu">Soups</label>
                 </h1>
                 <div class="soups">
                     <section class="recipe">
@@ -793,7 +799,7 @@
             <input name="tabbed" id="tabbed4" type="radio">
             <section>
                 <h1>
-                    <label for="tabbed4" id="veg" class="Menu">Veggie</label>
+                    <label for="tabbed4" id="veg" aria-expanded="false" class="Menu">Veggie</label>
                 </h1>
                 <div class="veggie">
                     <section class="recipe">
@@ -1162,7 +1168,7 @@
             <input name="tabbed" id="tabbed5" type="radio">
             <section>
                 <h1>
-                    <label for="tabbed5" id="fish" class="Menu">Fish</label>
+                    <label for="tabbed5" id="fish" aria-expanded="false" class="Menu">Fish</label>
                 </h1>
                 <div class="fish">
                     <section class="recipe">
@@ -1290,7 +1296,7 @@
             <input name="tabbed" id="tabbed6" type="radio">
             <section>
                 <h1>
-                    <label for="tabbed6" id="chick" class="Menu">Chicken</label>
+                    <label for="tabbed6" id="chick" aria-expanded="false" class="Menu">Chicken</label>
                 </h1>
                 <div class="chicken">
 
@@ -1300,7 +1306,7 @@
             <input name="tabbed" id="tabbed7" type="radio">
             <section>
                 <h1>
-                    <label for="tabbed7" id="pork" class="Menu">Pork</label>
+                    <label for="tabbed7" id="pork" aria-expanded="false" class="Menu">Pork</label>
                 </h1>
                 <div class="pork">
 
@@ -1310,7 +1316,7 @@
             <input name="tabbed" id="tabbed8" type="radio">
             <section>
                 <h1>
-                    <label for="tabbed8" id="beef" class="Menu">Beef</label>
+                    <label for="tabbed8" id="beef" aria-expanded="false" class="Menu">Beef</label>
                 </h1>
                 <div class="beef">
 
@@ -1320,56 +1326,57 @@
             <input name="tabbed" id="tabbed9" type="radio">
             <section>
                 <h1>
-                    <label for="tabbed9" id="dess" class="Menu">Desserts</label>
+                    <label for="tabbed9" id="dess" aria-expanded="false" class="Menu">Desserts</label>
                 </h1>
                 <div class="desserts">
 
                 </div>
             </section>
+        </div>
 
 
 
 
+        <footer id="footer">
+            <img id="ex-sign" src="img/exclamation-triangle-solid.png" alt="exclamation sign it a triangle">
+            <p>Copyright disclaimer: I do not own any of the recipes, <br> please follow the links in the recipe titles
+                for the originals.</p>
+            <img id="ex-sign" src="img/exclamation-triangle-solid.png" alt="exclamation sign it a triangle">
+        </footer>
 
-            <footer id="footer">
-                <img id="ex-sign" src="img/exclamation-triangle-solid.png" alt="exclamation sign it a triangle">
-                <p>Copyright disclaimer: I do not own any of the recipes, please follow the links in the recipe titles for the originals.</p>
-                <img id="ex-sign" src="img/exclamation-triangle-solid.png" alt="exclamation sign it a triangle">
-            </footer>
+        <script>
+            const navButton = document.querySelector('button[aria-expanded]');
 
-            <script>
-                const navButton = document.querySelector('button[aria-expanded]');
+            function toggleMenu({ target }) {
+                const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+                navButton.setAttribute('aria-expanded', !expanded);
+            }
 
-                function toggleMenu({ target }) {
-                    const expanded = target.getAttribute('aria-expanded') === 'true' || false;
-                    navButton.setAttribute('aria-expanded', !expanded);
+            navButton.addEventListener('click', toggleMenu);
+
+        </script>
+
+        <script>
+            //Get the button:
+            mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
                 }
+            }
 
-                navButton.addEventListener('click', toggleMenu);
-
-            </script>
-
-            <script>
-                //Get the button:
-                mybutton = document.getElementById("myBtn");
-
-                // When the user scrolls down 20px from the top of the document, show the button
-                window.onscroll = function () { scrollFunction() };
-
-                function scrollFunction() {
-                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                        mybutton.style.display = "block";
-                    } else {
-                        mybutton.style.display = "none";
-                    }
-                }
-
-                // When the user clicks on the button, scroll to the top of the document
-                function topFunction() {
-                    document.body.scrollTop = 0; // For Safari
-                    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-                }
-            </script>
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+        </script>
 
     </body>
 
