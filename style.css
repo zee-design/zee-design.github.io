@@ -329,7 +329,19 @@ li {
     .rc_block{
         align-self: center;
     }
-
+    #divider{
+        text-align: center;
+        margin-bottom: 165px;
+        font-size: 26px;
+    }
+    #footer{
+        position: relative;
+        height: 165px;
+        margin-top: -165px;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -343,21 +355,6 @@ li {
     }
     .ingredients, .method {
         margin: 5px;
-    }
-    #main {
-        overflow: auto;
-        padding-bottom: 450px;
-    }
-    
-    #footer {
-        background-color: rgba(53, 11, 0, 0.692);
-        position: relative;
-        height: 450px;
-        margin-top: -450px;
-        clear: both;
-        text-align: center;
-        padding: 50px 0;
-        font-size: 36px;
     }
 }
 
@@ -385,12 +382,7 @@ li {
         .logo{
             align-self: center;
         }
-        #divider{
-            text-align: center;
-            margin-bottom: 220px;
-            font-size: 26px;
-        }
-
+        
         .recipe {
             grid-template-columns: 100%;
             grid-template-areas: 
@@ -405,12 +397,5 @@ li {
         .ingredients ul {
             display: block;
         }
-        #footer{
-        position: relative;
-        height: 220px;
-        margin-top: -220px;
-        text-align: center;
-        padding: 10px 0;
-        font-size: 16px;
-        }
+
     }
