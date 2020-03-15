@@ -114,26 +114,39 @@ li {
 
 #tab-1, #heading-1 {
     background: #0d0d13;
+    text-align: center;
+    border-radius: 10px;
 }
 
 #tab-2, #heading-2 {
     background: #fca644;
+    text-align: center;
+    border-radius: 10px;
+   
 }
 
 #tab-3, #heading-3 {
     background: #66400e;
+    text-align: center;
+    border-radius: 10px;
 }
 
 #tab-4, #heading-4 {
     background: #247021;
+    text-align: center;
+    border-radius: 10px;
 }
 
 #tab-5, #heading-5 {
     background: #232170;
+    text-align: center;
+    border-radius: 10px;
 }
 
 #tab-6, #heading-6 {
     background: #ec48b5;
+    text-align: center;
+    border-radius: 10px;
 }
 
 #tab-1, #tab-2, #tab-3, #tab-4, #tab-5, #tab-6{
@@ -141,7 +154,11 @@ li {
     color: beige;
     border: 1px solid;
     padding: 10px 20px;
-    font-family: 'Caveat Brush'
+    font-family: 'Caveat Brush';
+}
+
+#tab-1:hover, #tab-2:hover, #tab-3:hover, #tab-4:hover, #tab-5:hover, #tab-6:hover {
+    background-color: rgba(53, 11, 0, 0.692);
 }
 
 .nav-tabs {
@@ -157,7 +174,6 @@ li {
 .card-body{
     padding: 0;
 }
-
 
 /*top grid*/
 .welcome {
