@@ -331,13 +331,13 @@ li {
     }
     #divider{
         text-align: center;
-        margin-bottom: 165px;
+        margin-bottom: 220px;
         font-size: 26px;
     }
     #footer{
         position: relative;
-        height: 165px;
-        margin-top: -165px;
+        height: 220px;
+        margin-top: -220px;
         text-align: center;
         padding: 10px 0;
         font-size: 16px;
