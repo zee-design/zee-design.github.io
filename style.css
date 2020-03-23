@@ -4,7 +4,6 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     scroll-behavior: smooth;
-	-webkit-overflow-scrolling: touch;
 }
 
 html, body{
@@ -28,9 +27,8 @@ button {
 	background: #0d0d13;
 	border: 1px solid;
 	padding: 10px 20px;
-	font-family: 'Caveat Brush'
+    font-family: 'Caveat Brush';
 }
-
 
 .rc-img {
     max-width: 100%;
@@ -81,6 +79,15 @@ li {
     max-width: 100%;
 }
 
+.nav-item {
+    margin: auto;
+    min-width: 170px;
+}
+
+[aria-controls="menu-list"] {
+    display: none;
+}
+
 /*back to the top button*/
 #myBtn {
     display: none;
@@ -127,7 +134,7 @@ li {
 }
 
 #tab-3, #heading-3 {
-    background: #66400e;
+    background: #8f9c17;
     text-align: center;
     border-radius: 10px;
 }
@@ -145,12 +152,30 @@ li {
 }
 
 #tab-6, #heading-6 {
-    background: #ec48b5;
+    background: #e66d0b;
     text-align: center;
     border-radius: 10px;
 }
 
-#tab-1, #tab-2, #tab-3, #tab-4, #tab-5, #tab-6{
+#tab-7, #heading-7 {
+    background: #e60b54;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#tab-8, #heading-8 {
+    background: #472204;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#tab-9, #heading-9 {
+    background: #e60be6;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#tab-1, #tab-2, #tab-3, #tab-4, #tab-5, #tab-6, #tab-7, #tab-8, #tab-9{
     border-radius: 10px;
     color: beige;
     border: 1px solid;
@@ -164,7 +189,6 @@ li {
 
 .nav-tabs {
     display:none;
-	justify-content: center;
     border-bottom: 0;
 }
 
@@ -314,6 +338,7 @@ li {
 }
 
 @media (max-width: 1000px) {
+    
     #myBtn{
         width: 50px;
         height: 30px;
@@ -331,9 +356,19 @@ li {
     }
     button{
         align-self: center;
-        font-size: 20px;
+        font-size: 28px;
+    }
+    .close {
+        color: beige;
+        opacity: 1;
+        font-size: 32px;
+        text-align: center;
+        float: none;
     }
     
+    .close:hover {
+        color: white;
+    }
     label{
         font-size: 26px;
     }
@@ -377,18 +412,16 @@ li {
 }
 
 
-@media(max-width:767px){
-    /* 
-     * Changed selector to `.tab-content > .tab-pane` in order to override `.fade:not(.show)`
-     * In BS4 Beta `.tab-pane`s were rendered hidden by just `.fade`
-     */
+/*@media(max-width:767px){
+    /* Changed selector to `.tab-content > .tab-pane` in order to override `.fade:not(.show)`
+       In BS4 Beta `.tab-pane`s were rendered hidden by just `.fade`
      .tab-content > .tab-pane {
          display: block;
          opacity: 1;
         }
-    }
+}*/
     
-    @media (max-width: 500px) {
+@media (max-width: 500px) {
         
         .menu-list li {
             padding: 5px;
