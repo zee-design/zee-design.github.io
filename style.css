@@ -164,6 +164,7 @@ li {
 
 .nav-tabs {
     display:none;
+	justify-content: center;
     border-bottom: 0;
 }
 
