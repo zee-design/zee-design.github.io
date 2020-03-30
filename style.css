@@ -1,4 +1,4 @@
-/*Basic style*/
+/*---------------Basic style----------------*/
 * {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -10,12 +10,11 @@ html, body{
     height: 100%;
 }
 
-
 body {
 	font-family: 'Open Sans', sans-serif;
 	color: beige;
 	background-color: #805F43;
-	background-image: url(img/background.png);
+	background-image: url(img/background2.png);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -129,34 +128,25 @@ li {
     right: 45px;
     font-size: 40px;
 }
-/*back to the top button*/
+/*----------------back to the top button-----------------*/
 #myBtn {
     display: none;
-	/* Hidden by default */
-	position: fixed;
-	/* Fixed/sticky position */
-	bottom: 10px;
-	/* Place the button at the bottom of the page */
-	right: 10px;
-	/* Place the button 30px from the right */
-	z-index: 99;
-	/* Make sure it does not overlap */
-	cursor: pointer;
-	/* Add a mouse pointer on hover */
-	width: 60px;
-	padding: 5px;
-	/* Some padding */
-	border-radius: 10px;
-	/* Rounded corners */
-	font-size: 20px;
-	/* Increase font size */
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    cursor: pointer;
+    width: 60px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 20px;
 }
 
 #myBtn:hover {
     background-color: #555;
-	/* Add a dark-grey background on hover */
 }
-/*Menu colors*/
+
+/*-------------------------Menu colours------------------------*/
 .card-header h5 a{
     color: beige;
 }
@@ -243,7 +233,7 @@ li {
     padding: 0;
 }
 
-/*top grid*/
+/*----------------------------Top Grid-------------------------------------*/
 .welcome {
     display: grid;
     grid-template-columns: 30% 1fr;
@@ -282,7 +272,7 @@ li {
     text-align: center;
 }
 
-/*recipe grid*/
+/*---------------------------Recipe Grid-----------------------*/
 .recipe {
     grid-area: recipe;
     display: grid;
@@ -337,6 +327,7 @@ li {
     justify-self: center;
 }
 
+
 @media(min-width:768px) {
     .nav-tabs {
         display: flex;
@@ -360,7 +351,85 @@ li {
     font-size: 42px;
 }
 
-/*Footer area*/
+/*------------------------------Comments-----------------------*/
+.comments {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    grid-template-areas: 
+    "comment-people comment-form";
+    background-color: rgba(53, 11, 0, 0.692);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.comments-list {
+    padding: 0;
+}
+.commenter {
+    border-radius: 50%;
+    float: left;
+    margin: auto 10px;
+}
+.comment-date {
+    padding: 5px;
+}
+.comment-text {
+    background-color: #0000009a;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.comment-text p {
+    text-align: justify;
+}
+.comment-people {
+    grid-area: comment-people;
+}
+.comment-form {
+    grid-area: comment-form;
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 1fr 1fr 250px 1fr;
+    grid-template-areas:
+    "lac lac" 
+    "yourName yourEmail"
+    "yourMessage yourMessage"
+    ". postComment";
+    background-color: #0000009a;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    gap: 10px;
+}
+#lac {
+    grid-area: lac;
+}
+#yourName {
+    grid-area: yourName;
+}
+#yourEmail {
+    grid-area: yourEmail;
+}
+#yourMessage {
+    grid-area: yourMessage;
+}
+#postComment {
+    grid-area: postComment;
+    max-width: 200px;
+    justify-self: end;
+    font-size: 20px;    
+    padding: 5px;
+}
+#postComment:hover {
+    background-color: #555;
+}
+#yourName input, #yourEmail input, #yourMessage textarea {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*--------------------Footer area------------------------*/
 #footer{
     background-color: rgba(53, 11, 0, 0.692);
     position: relative;
@@ -380,6 +449,7 @@ li {
     display: inline;
 }
 
+/*-----------------------------------Media Queries----------------------*/
 @media (max-width: 1000px) {
     .nav-tabs {
         display: none;
@@ -465,6 +535,14 @@ li {
     }
     .ingredients, .method {
         margin: 5px;
+    }
+    .comments {
+        grid-template-areas: 
+        "comment-people comment-people"
+        "comment-form comment-form";
+    }
+    .comments-list {
+        padding: 0;
     }
 }
 

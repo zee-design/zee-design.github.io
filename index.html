@@ -1397,6 +1397,46 @@
         </div>
     </div>
 
+    <div class="comments">
+        <div class="comment-people">
+        <h5>Comments (2)</h5>
+        <ul class="comments-list">
+            
+                <img class="commenter" src="img/author-thumbs/1.jpg" alt="">
+                <div class="comment-date">April 1,2019
+                    <h6>Jane Smith <a href="#" class="reply">Reply</a></h6>
+                </div>
+                <div class="comment-text">
+                    <p>Aenean non felis dapibus, placerat libero auctor, ornare ante. Morbi quis ex eleifend, sodales nulla vitae, scelerisque ante. Nunc id vulputate dui. Suspendisse consectetur rutrum metus nec scelerisque. </p>
+                </div>
+            
+            
+                <img class="commenter" src="img/author-thumbs/2.jpg" alt="">
+                <div class="comment-date">April 1,2019
+                    <h6>Michael James  <a href="#" class="reply">Reply</a></h6>
+
+                </div>
+                <div class="comment-text">
+                    <p>Non felis dapibus, placerat libero auctor, ornare ante. Morbi quis ex eleifend, sodales nulla vitae, scelerisque ante. Nunc id vulputate dui. Suspendisse consectetur rutrum metus.</p>
+                </div>
+            
+        </ul>
+    </div>
+    <form class="comment-form">
+        <h5 id="lac">Leave a comment</h5>
+            <div id="yourName">
+                    <input type="text" placeholder="Your name">
+                </div>
+                <div id="yourEmail">
+                    <input type="text" placeholder="Your e-mail">
+                </div>
+                <div id="yourMessage">
+                    <textarea placeholder="Your message"></textarea>
+                </div>
+                <button id="postComment">Post Comment</button>
+        </form>
+    </div>
+
     <div id="divider">~</div>
 
     <footer id="footer">
@@ -1407,7 +1447,7 @@
     </footer>
 
 
-    <!-- Back to the top button -->
+    <!------------ Back to the top button ------------>
     <script>
         mybutton = document.getElementById("myBtn");
 
@@ -1427,7 +1467,7 @@
         }
     </script>
 
-    <!-- Mobile Nav -->
+    <!------------ Mobile Nav ------------>
     <script>
         const navButton = document.querySelector('button[aria-expanded]');
 
@@ -1439,7 +1479,7 @@
         navButton.addEventListener('click', toggleNav);
     </script>
 
-    <!-- Mobile Nav Animation -->
+    <!------------ Mobile Nav Animation ------------>
     <script>
         function openNav() {
             document.getElementById("myNav").style.width = "100%";
