@@ -1,9 +1,15 @@
-/*---------------Basic style----------------*/
+/*#region ---------------Basic Style----------------*/
 * {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     scroll-behavior: smooth;
+}
+
+/*-------------------------Variables------------------------------------*/
+:root {
+    --main-card-bg: rgba(53, 11, 0, 0.692);
+    --content-bg: #0000009a;
 }
 
 html, body{
@@ -31,7 +37,7 @@ button {
 
 .rc-img {
     max-width: 100%;
-	background-color: #0000009a;
+	background-color: var(--content-bg);
     border-radius: 10px;
     margin-bottom: 5px;
 }
@@ -52,7 +58,7 @@ h1, h2, h3, p {
 }
 
 h3 {
-    background-color: #0000009a;
+    background-color: var(--content-bg);
 	border-radius: 10px;
 }
 
@@ -82,7 +88,9 @@ li {
     margin: auto;
     min-width: 150px;
 }
+/*#endregion*/
 
+/*#region ------------------Mobile Overlay--------------*/
 #myMobile {
     display: none;
 }
@@ -128,7 +136,9 @@ li {
     right: 45px;
     font-size: 40px;
 }
-/*----------------back to the top button-----------------*/
+/*#endregion*/
+
+/*#region ----------------Back to the Top Button-----------------*/
 #myBtn {
     display: none;
     position: fixed;
@@ -145,8 +155,9 @@ li {
 #myBtn:hover {
     background-color: #555;
 }
+/*#endregion*/
 
-/*-------------------------Menu colours------------------------*/
+/*#region -------------------------Menu Colours------------------------*/
 .card-header h5 a{
     color: beige;
 }
@@ -215,16 +226,18 @@ li {
 }
 
 #tab-1:hover, #tab-2:hover, #tab-3:hover, #tab-4:hover, #tab-5:hover, #tab-6:hover {
-    background-color: rgba(53, 11, 0, 0.692);
+    background-color: var(--main-card-bg);
 }
+/*#endregion*/
 
+/*#region -----------------Bootstrap Override-----------------------*/
 .nav-tabs {
     display:none;
     border-bottom: 0;
 }
 
 .card{
-    background-color: rgba(53, 11, 0, 0.692);
+    background-color: var(--main-card-bg);
     margin-bottom: 10px;
     position: inherit;
 }
@@ -232,8 +245,9 @@ li {
 .card-body{
     padding: 0;
 }
+/*#endregion*/
 
-/*----------------------------Top Grid-------------------------------------*/
+/*#region ----------------------------Top Grid-------------------------------------*/
 .welcome {
     display: grid;
     grid-template-columns: 30% 1fr;
@@ -244,7 +258,7 @@ li {
     justify-items: center;
     padding: 10px;
     margin: 10px;
-    background-color: rgba(53, 11, 0, 0.692);
+    background-color: var(--main-card-bg);
     border-radius: 5px;
 }
 
@@ -271,8 +285,9 @@ li {
     grid-area: comment;
     text-align: center;
 }
+/*#endregion*/
 
-/*---------------------------Recipe Grid-----------------------*/
+/*#region ---------------------------Recipe Grid-----------------------*/
 .recipe {
     grid-area: recipe;
     display: grid;
@@ -302,7 +317,7 @@ li {
 .ingredients {
     grid-area: ingredients;
     padding: 20px;
-    background-color: #0000009a;
+    background-color: var(--content-bg);
     border-radius: 10px;
     margin: 10px;
 }
@@ -316,7 +331,7 @@ li {
 .method {
     grid-area: method;
     padding: 20px;
-    background-color: #0000009a;
+    background-color: var(--content-bg);
     border-radius: 10px;
     margin: 10px;
 }
@@ -326,7 +341,7 @@ li {
     max-width: 100%;
     justify-self: center;
 }
-
+/*#endregion*/
 
 @media(min-width:768px) {
     .nav-tabs {
@@ -351,13 +366,13 @@ li {
     font-size: 42px;
 }
 
-/*------------------------------Comments-----------------------*/
+/*#region ------------------------------Comments-----------------------*/
 .comments {
     display: grid;
     grid-template-columns: 40% 1fr;
     grid-template-areas: 
     "comment-people comment-form";
-    background-color: rgba(53, 11, 0, 0.692);
+    background-color: var(--main-card-bg);
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
@@ -374,7 +389,7 @@ li {
     padding: 5px;
 }
 .comment-text {
-    background-color: #0000009a;
+    background-color: var(--content-bg);
     padding: 20px;
     border-radius: 10px;
     margin: 10px;
@@ -395,7 +410,7 @@ li {
     "yourName yourEmail"
     "yourMessage yourMessage"
     ". postComment";
-    background-color: #0000009a;
+    background-color: var(--content-bg);
     padding: 20px;
     border-radius: 10px;
     margin: 10px;
@@ -427,11 +442,11 @@ li {
     width: 100%;
     height: 100%;
 }
+/*#endregion*/
 
-
-/*--------------------Footer area------------------------*/
+/*#region --------------------Footer-----------------------*/
 #footer{
-    background-color: rgba(53, 11, 0, 0.692);
+    background-color: var(--main-card-bg);
     position: relative;
     height: 300px;
     clear: both;
@@ -448,8 +463,9 @@ li {
     max-width: 50px;
     display: inline;
 }
+/*#endregion*/
 
-/*-----------------------------------Media Queries----------------------*/
+/*#region -----------------------------------Media Queries----------------------*/
 @media (max-width: 1000px) {
     .nav-tabs {
         display: none;
@@ -545,17 +561,7 @@ li {
         padding: 0;
     }
 }
-
-
-/*@media(max-width:767px){
-    /* Changed selector to `.tab-content > .tab-pane` in order to override `.fade:not(.show)`
-       In BS4 Beta `.tab-pane`s were rendered hidden by just `.fade`
-     .tab-content > .tab-pane {
-         display: block;
-         opacity: 1;
-        }
-}*/
-    
+   
 @media (max-width: 500px) {
         
      .menu-list li {
@@ -585,3 +591,4 @@ li {
         font-size: 16px;
     }
 }
+/*#endregion*/
