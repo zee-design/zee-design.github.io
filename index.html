@@ -26,15 +26,15 @@
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-            <a href="#pane-1" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), topFunction()">Home</a>
-            <a href="#pane-2" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), topFunction()">Breakfast</a>
-            <a href="#pane-3" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), topFunction()">Soups</a>
-            <a href="#pane-4" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), topFunction()">Veggie</a>
-            <a href="#pane-5" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), topFunction()">Fish</a>
-            <a href="#pane-6" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), topFunction()">Chicken</a>
-            <a href="#pane-7" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), topFunction()">Pork</a>
-            <a href="#pane-8" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), topFunction()">Beef</a>
-            <a href="#pane-9" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), topFunction()">Desserts</a>
+            <a href="#pane-1" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), switch_tab_function(1) ,topFunction()">Home</a>
+            <a href="#pane-2" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), switch_tab_function(1) ,topFunction()">Breakfast</a>
+            <a href="#pane-3" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), switch_tab_function(1) ,topFunction()">Soups</a>
+            <a href="#pane-4" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), switch_tab_function(1) ,topFunction()">Veggie</a>
+            <a href="#pane-5" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), switch_tab_function(1) ,topFunction()">Fish</a>
+            <a href="#pane-6" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), switch_tab_function(1) ,topFunction()">Chicken</a>
+            <a href="#pane-7" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), switch_tab_function(1) ,topFunction()">Pork</a>
+            <a href="#pane-8" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), switch_tab_function(1) ,topFunction()">Beef</a>
+            <a href="#pane-9" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), switch_tab_function(1) ,topFunction()">Desserts</a>
         </div>
     </div>
 
@@ -1239,7 +1239,7 @@
 
             <div id="pane-6" class="card tab-pane fade" role="tabpanel" aria-labelledby="tab-6">
                 <div class="card-body">
-                    <p>
+                    <p class="title">
                         <style>
                             p {
                                 text-align: center;
@@ -1251,7 +1251,7 @@
 
             <div id="pane-7" class="card tab-pane fade" role="tabpanel" aria-labelledby="tab-7">
                 <div class="card-body">
-                    <p>
+                    <p class="title">
                         <style>
                             p {
                                 text-align: center;
@@ -1263,7 +1263,7 @@
 
             <div id="pane-8" class="card tab-pane fade" role="tabpanel" aria-labelledby="tab-8">
                 <div class="card-body">
-                    <p>
+                    <p class="title">
                         <style>
                             p {
                                 text-align: center;
@@ -1477,6 +1477,20 @@
             document.getElementById("myNav").style.width = "0%";
         }
     </script>
+  
+  <!------------------------ Switch Tabs in Mobile View------------>
+  <script>
+    function switch_tab_function(tab_number) {
+
+             //var str = `'#tabs a[href="#${tab_name}"]'`;
+
+             var str = `#tabs li:nth-child(${tab_number}) a`;
+
+             console.log("Switching to tab " + str);
+
+             $(str).tab('show')
+    }
+  </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
