@@ -1,12 +1,9 @@
-/*#region ---------------Basic Style----------------*/
+/*#region ------------------------------Basic Style--------------------------------*/
 * {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
-/*-------------------------Variables------------------------------------*/
 :root {
     --main-card-bg: rgba(53, 11, 0, 0.692);
     --content-bg: #0000009a;
@@ -90,7 +87,7 @@ li {
 }
 /*#endregion*/
 
-/*#region ------------------Mobile Overlay--------------*/
+/*#region ------------------------------Mobile Overlay-----------------------------*/
 #myMobile {
     display: none;
 }
@@ -138,7 +135,7 @@ li {
 }
 /*#endregion*/
 
-/*#region ----------------Back to the Top Button-----------------*/
+/*#region --------------------------Back to the Top Button-------------------------*/
 #myBtn {
     display: none;
     position: fixed;
@@ -157,7 +154,7 @@ li {
 }
 /*#endregion*/
 
-/*#region -------------------------Menu Colours------------------------*/
+/*#region ------------------------------Tab Menu Colours-------------------------------*/
 .card-header h5 a{
     color: beige;
 }
@@ -230,7 +227,7 @@ li {
 }
 /*#endregion*/
 
-/*#region -----------------Bootstrap Override-----------------------*/
+/*#region ------------------------Bootstrap Override-------------------------------*/
 .nav-tabs {
     display:none;
     border-bottom: 0;
@@ -251,7 +248,10 @@ li {
 .welcome {
     display: grid;
     grid-template-columns: 30% 1fr;
-    grid-template-areas: "logo favs" "intro intro" "comment comment";
+    grid-template-areas: 
+    "logo favs" 
+    "intro intro" 
+    "comment comment";
     gap: 10px;
     max-width: 100%;
     font-size: 24px;
@@ -287,11 +287,11 @@ li {
 }
 /*#endregion*/
 
-/*#region ---------------------------Recipe Grid-----------------------*/
+/*#region ---------------------------Recipe Grid-----------------------------------*/
 .recipe {
     grid-area: recipe;
     display: grid;
-    grid-auto-columns: 25% 1fr;
+    grid-template-columns: 25% 1fr;
     grid-template-areas: 
     "cat_name cat_name"
     "rc_block ingredients"
@@ -366,7 +366,7 @@ li {
     font-size: 42px;
 }
 
-/*#region ------------------------------Comments-----------------------*/
+/*#region ------------------------------Comments-----------------------------------*/
 .comments {
     display: grid;
     grid-template-columns: 40% 1fr;
@@ -444,28 +444,37 @@ li {
 }
 /*#endregion*/
 
-/*#region --------------------Footer-----------------------*/
-#footer{
+/*#region -----------------------------------Footer--------------------------------*/
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 65% 1fr;
+    grid-template-areas: 
+    "ex-sign1 disclaimer ex-sign2"
+    "ex-sign1 social ex-sign2";
     background-color: var(--main-card-bg);
-    position: relative;
-    height: 300px;
-    clear: both;
-    text-align: center;
-    padding: 50px 0;
-    font-size: 36px;
 }
-
-#footer p{
-    padding-bottom: 10px;
+.ex-sign1 {
+    grid-area: ex-sign1;
+    max-width: 100px;
+    justify-self: center;
+    align-self: center;
 }
-
-#ex-sign{
-    max-width: 50px;
-    display: inline;
+.ex-sign2 {
+    grid-area: ex-sign2;
+    max-width: 100px;
+    justify-self: center;
+    align-self: center;
+}
+.disclaimer {
+    grid-area: disclaimer;
+}
+.social {
+    grid-area: social;
+    justify-self: center;
 }
 /*#endregion*/
 
-/*#region -----------------------------------Media Queries----------------------*/
+/*#region ----------------------------Media Queries--------------------------------*/
 @media (max-width: 1000px) {
     .nav-tabs {
         display: none;
@@ -480,22 +489,22 @@ li {
         color: beige;
         font-size: 20px;
     }
-    #myBtn{
+    #myBtn {
         width: 50px;
         height: 30px;
         right: 5px;
         padding: 0;
     }
-    .logo{
+    .logo {
         align-self: center;
         justify-self: right;
     }
-    .favs{
+    .favs {
         align-self: center;
         justify-self: left;
         font-size: 2em;
     }
-    button{
+    button {
         align-self: center;
         font-size: 28px;
     }
@@ -508,32 +517,29 @@ li {
         font-weight: 400;
         text-shadow: none;
     }
-    
     .close:hover {
         color: white;
     }
     label{
         font-size: 26px;
     }
-
     .recipe {
         grid-template-areas: 
         "cat_name cat_name"
         "rc_block ingredients"
         "method method";
     }
-    .rc_block{
+    .rc_block {
         align-self: center;
     }
-    #divider{
+    #divider {
         text-align: center;
-        margin-bottom: 220px;
         font-size: 26px;
     }
-    #footer{
+    #footer {
         position: relative;
-        height: 220px;
-        margin-top: -220px;
+        height: 400px;
+        margin-top: -400px;
         text-align: center;
         padding: 10px 0;
         font-size: 16px;
@@ -541,7 +547,6 @@ li {
 }
 
 @media (max-width: 700px) {
-    
     .recipe {
         grid-template-areas: 
         "cat_name cat_name"
@@ -560,17 +565,19 @@ li {
     .comments-list {
         padding: 0;
     }
+    .ex-sign1, .ex-sign2 {
+        max-width: 80px;
+    }
 }
    
 @media (max-width: 500px) {
-        
-     .menu-list li {
+    .menu-list li {
         padding: 5px;
     }
     .menu-list a {
         padding: 5px;
     }
-    .logo{
+    .logo {
         align-self: center;
     }
     .recipe {
@@ -589,6 +596,15 @@ li {
     }
     #myMobile {
         font-size: 16px;
+    }
+    footer {
+        padding: 5px;
+        background: url(/img/exclamation-triangle-solid.png);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .ex-sign1, .ex-sign2 {
+        display: none;
     }
 }
 /*#endregion*/

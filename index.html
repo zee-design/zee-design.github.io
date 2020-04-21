@@ -5,13 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
     <title>Zee's Favourites</title>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    
     <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Open+Sans:600&display=swap" rel="stylesheet">
+    
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -19,6 +24,8 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#805f43">
     <meta name="msapplication-TileColor" content="#805f43">
     <meta name="theme-color" content="#805f43">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body id="main">
@@ -26,15 +33,15 @@
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-            <a href="#pane-1" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), switch_tab_function(1) ,topFunction()">Home</a>
-            <a href="#pane-2" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), switch_tab_function(1) ,topFunction()">Breakfast</a>
-            <a href="#pane-3" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), switch_tab_function(1) ,topFunction()">Soups</a>
-            <a href="#pane-4" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), switch_tab_function(1) ,topFunction()">Veggie</a>
-            <a href="#pane-5" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), switch_tab_function(1) ,topFunction()">Fish</a>
-            <a href="#pane-6" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), switch_tab_function(1) ,topFunction()">Chicken</a>
-            <a href="#pane-7" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), switch_tab_function(1) ,topFunction()">Pork</a>
-            <a href="#pane-8" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), switch_tab_function(1) ,topFunction()">Beef</a>
-            <a href="#pane-9" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), switch_tab_function(1) ,topFunction()">Desserts</a>
+            <a href="#pane-1" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), topFunction()">Home</a>
+            <a href="#pane-2" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), topFunction()">Breakfast</a>
+            <a href="#pane-3" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), topFunction()">Soups</a>
+            <a href="#pane-4" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), topFunction()">Veggie</a>
+            <a href="#pane-5" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), topFunction()">Fish</a>
+            <a href="#pane-6" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), topFunction()">Chicken</a>
+            <a href="#pane-7" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), topFunction()">Pork</a>
+            <a href="#pane-8" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), topFunction()">Beef</a>
+            <a href="#pane-9" class="nav-link title" data-toggle="tab" role="tab" onclick="closeNav(), topFunction()">Desserts</a>
         </div>
     </div>
 
@@ -1239,10 +1246,11 @@
 
             <div id="pane-6" class="card tab-pane fade" role="tabpanel" aria-labelledby="tab-6">
                 <div class="card-body">
-                    <p class="title">
+                    <p  class="title dummy">
                         <style>
-                            p {
+                            .dummy {
                                 text-align: center;
+                                color: crimson;
                             }
                         </style>Chicken - COMING SOON!
                     </p>
@@ -1251,10 +1259,11 @@
 
             <div id="pane-7" class="card tab-pane fade" role="tabpanel" aria-labelledby="tab-7">
                 <div class="card-body">
-                    <p class="title">
+                    <p  class="title dummy">
                         <style>
-                            p {
+                            .dummy {
                                 text-align: center;
+                                color: crimson;
                             }
                         </style>Pork - COMING SOON!
                     </p>
@@ -1263,10 +1272,11 @@
 
             <div id="pane-8" class="card tab-pane fade" role="tabpanel" aria-labelledby="tab-8">
                 <div class="card-body">
-                    <p class="title">
+                    <p  class="title dummy">
                         <style>
-                            p {
+                            .dummy {
                                 text-align: center;
+                                color: crimson;
                             }
                         </style>Beef - COMING SOON!
                     </p>
@@ -1439,11 +1449,18 @@
 
     <div id="divider">~</div>
 
-    <footer id="footer">
-        <img id="ex-sign" src="img/exclamation-triangle-solid.png" alt="exclamation sign in a triangle">
-        <p>Copyright disclaimer: I do not own any of the recipes, <br> please follow the links in the recipe titles
+    <footer class="footer">
+        <img class="ex-sign1" src="img/exclamation-triangle-solid.png" alt="exclamation sign in a triangle">
+        <p class="disclaimer title">Copyright disclaimer: I do not own any of the recipes, <br> please follow the links in the recipe titles
             for the originals.</p>
-        <img id="ex-sign" src="img/exclamation-triangle-solid.png" alt="exclamation sign it a triangle">
+        <img class="ex-sign2" src="img/exclamation-triangle-solid.png" alt="exclamation sign it a triangle">
+
+        <div class="social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+       </div>
     </footer>
 
 
@@ -1477,20 +1494,6 @@
             document.getElementById("myNav").style.width = "0%";
         }
     </script>
-  
-  <!------------------------ Switch Tabs in Mobile View------------>
-  <script>
-    function switch_tab_function(tab_number) {
-
-             //var str = `'#tabs a[href="#${tab_name}"]'`;
-
-             var str = `#tabs li:nth-child(${tab_number}) a`;
-
-             console.log("Switching to tab " + str);
-
-             $(str).tab('show')
-    }
-  </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
