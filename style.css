@@ -17,10 +17,8 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	color: beige;
 	background-color: #805F43;
-	background-image: url(img/background.png);
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-image: url(img/bg-tile.jpg);
+	background-repeat: round;
 }
 
 button {
