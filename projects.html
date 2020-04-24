@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RC Models by Rastaman - Projects</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="projects.html">Projects</a></li>
+            <li><a href="wish.html">Wish-List</a></li>
+        </ul>
+    </nav>
+
+    <article class="post">
+        <h1>RC Models by Rastaman</h1>
+        <h2 class="greet-ctr">Projects</h2>
+    </article>
+
+    <h3 class="project-title">All the planes seen here are built by me. Some are ready and tested already, some are
+        still work in
+        progress.</h3>
+
+    <hr>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <div class="content"><img src="/img/placeholder.jpg" alt="picture of RC model plane"></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="/img/placeholder2.jpg" alt="picture of RC model plane"></div>
+        </div>
+    </div>
+    <div class="project-description">
+        <h2>First plane</h2>
+        <h3>About this plan</h3>
+        <p>Here goes some description of the build of the model. There will be a lot of text, so let me just
+            copy-paste
+            this to see it will take up space. Here goes some description of the build of the model. There will be a
+            lot
+            of text, so let me just copy-paste
+            this to see it will take up space.Here goes some description of the build of the model. There will be a
+            lot
+            of text, so let me just copy-paste
+            this to see it will take up space.Here goes some description of the build of the model. There will be a
+            lot
+            of text, so let me just copy-paste
+            this to see it will take up space.Here goes some description of the build of the model. There will be a
+            lot
+            of text, so let me just copy-paste
+            this to see it will take up space.Here goes some description of the build of the model. There will be a
+            lot
+            of text, so let me just copy-paste
+            this to see it will take up space.</p>
+    </div>
+
+    <hr>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <div class="content"><img src="/img/placeholder.jpg" alt="picture of RC model plane"></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="/img/placeholder2.jpg" alt="picture of RC model plane"></div>
+        </div>
+    </div>
+    <div class="project-description">
+        <h2>Second plane</h2>
+        <h3>About this plan</h3>
+        <p>Here goes some description of the build of the model. There will be a lot of text, so let me just
+            copy-paste
+            this to see it will take up space. Here goes some description of the build of the model. There will be a
+            lot
+            of text, so let me just copy-paste
+            this to see it will take up space.Here goes some description of the build of the model. There will be a
+            lot
+            of text, so let me just copy-paste
+            this to see it will take up space.Here goes some description of the build of the model. There will be a
+            lot
+            of text, so let me just copy-paste
+            this to see it will take up space.Here goes some description of the build of the model. There will be a
+            lot
+            of text, so let me just copy-paste
+            this to see it will take up space.Here goes some description of the build of the model. There will be a
+            lot
+            of text, so let me just copy-paste
+            this to see it will take up space.</p>
+    </div>
+
+    <hr>
+
+    <footer>
+        <div class="social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+
+        <div class="footer-paragraph dauphin-p">
+            <p>This website and its contents are copyright © 2017 - 2020 Andy RC Planes Ltd. unless it is stated
+                otherwise.</p>
+            <p>22 Science Park, Cambridge, VB4 0BA, United Kingdom</p>
+            <p>Use of this website is subject to our Privacy Policy.</p>
+        </div>
+
+    </footer>
+
+    <script>
+        var gallery = document.querySelector('.gallery');
+        var getVal = function (elem, style) { return parseInt(window.getComputedStyle(elem).getPropertyValue(style)); };
+        var getHeight = function (item) { return item.querySelector('.content').getBoundingClientRect().height; };
+        var resizeAll = function () {
+            var altura = getVal(gallery, 'grid-auto-rows');
+            var gap = getVal(gallery, 'grid-row-gap');
+            gallery.querySelectorAll('.gallery-item').forEach(function (item) {
+                var el = item;
+                el.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
+            });
+        };
+        gallery.querySelectorAll('img').forEach(function (item) {
+            item.classList.add('byebye');
+            if (item.complete) {
+                console.log(item.src);
+            }
+            else {
+                item.addEventListener('load', function () {
+                    var altura = getVal(gallery, 'grid-auto-rows');
+                    var gap = getVal(gallery, 'grid-row-gap');
+                    var gitem = item.parentElement.parentElement;
+                    gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
+                    item.classList.remove('byebye');
+                });
+            }
+        });
+        window.addEventListener('resize', resizeAll);
+        gallery.querySelectorAll('.gallery-item').forEach(function (item) {
+            item.addEventListener('click', function () {
+                item.classList.toggle('full');
+            });
+        });
+
+    </script>
+</body>
