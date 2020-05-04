@@ -18,6 +18,7 @@
 body {
     font-family: 'Raleway', sans-serif;
     background: url(img/website-background.png);
+    scroll-behavior: smooth;
 }
 
 .procopius {
