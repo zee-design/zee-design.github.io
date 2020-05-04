@@ -5,6 +5,7 @@
 :root {
     --cbc: #ffffff99;
     --bar: rgba(9, 40, 70, 0.75);
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -18,7 +19,6 @@
 body {
     font-family: 'Raleway', sans-serif;
     background: url(img/website-background.png);
-    scroll-behavior: smooth;
 }
 
 .procopius {
