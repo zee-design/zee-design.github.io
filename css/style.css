@@ -49,6 +49,30 @@ body {
     max-width: 100%;
 }
 
+.section {
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+    background-color: var(--cbc);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.300);
+}
+
+.section h1, .section h2 {
+    text-align: center;
+}
+
+.section h2 {
+    padding: 10px;
+}
+
+.section p {
+    text-align: justify;
+    padding: 0 30px;
+}
+
+.page-img {
+    justify-self: center;
+}
 /*#endregion*/
 
 /*#region----------------------Bootstrap Override---------------------------------*/
@@ -107,12 +131,7 @@ a {
 
 /*#region----------------------------About----------------------------------------*/
 
-.aboutSection {
-    width: 85%;
-    margin: auto;
-    padding: 20px;
-    background-color: var(--cbc);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.300);
+#aboutSection {
     text-align: center;
 }
 
@@ -120,12 +139,7 @@ a {
 
 /*#region---------------------------Price List------------------------------------*/
 
-.priceListSection {
-    width: 85%;
-    margin: auto;
-    padding: 20px;
-    background-color: var(--cbc);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.300);
+#priceListSection {
     display: grid;
     grid-template-columns: 50% 1fr;
     gap: 20px;
@@ -174,15 +188,6 @@ span {
 /*#endregion*/
 
 /*#region---------------------------Products--------------------------------------*/
-
-.productsSection {
-    width: 85%;
-    margin: auto;
-    padding: 20px;
-    background-color: var(--cbc);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.300);
-}
-
 .productsSection h2 {
     border-bottom: 1px solid #959595;
     margin: 20px 0 20px 0;
@@ -294,4 +299,31 @@ footer h2 {
     color: black;
 }
 
+/*#endregion*/
+
+/*#region-----------------------------Animi---------------------------------------*/
+#animiSection {
+    text-align: center;
+    display: grid;
+}
+
+#animiSection p {
+    text-align: justify;
+    padding: 0 30px;
+}
+
+#animiSection h2 {
+    padding: 10px;
+}
+
+/*#endregion*/
+
+/*#region--------------------------Mesotherapy------------------------------------*/
+#mesoSection {
+    text-align: center;
+    display: grid;
+}
+/*#endregion*/
+
+/*#region-------------------------------3D----------------------------------------*/
 /*#endregion*/
