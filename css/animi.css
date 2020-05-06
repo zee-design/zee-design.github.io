@@ -5,6 +5,7 @@
     background-color: var(--cbc);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.300);
     text-align: center;
+    display: grid;
 }
 
 .animiSection p {
@@ -14,4 +15,8 @@
 
 .animiSection h2 {
     padding: 10px;
+}
+
+.page-img {
+    justify-self: center;
 }
