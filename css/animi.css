@@ -1,0 +1,9 @@
+.animiSection {
+    width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: var(--cbc);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.300);
+    text-align: center;
+}
+
