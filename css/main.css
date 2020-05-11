@@ -202,6 +202,10 @@ span.color {
 }
 */
 
+.proj-thumb {
+    border: 2px solid black;
+    box-shadow: 0 10px 20px 15px rgba(0, 0, 0, 0.500);
+}
 .modal-btn {
     background-color: black !important;
     border: black !important;
