@@ -51,23 +51,26 @@ p {
 
 .navbar-toggler {
     background-color: teal;
+    margin-right: 50px;
 }
 
 .navbar {
     border-bottom: 2px solid teal;
     margin-bottom: 0;
+    padding: 0;
 }
 
 #logo {
     border-radius: 5px;
-    width: 45px;
-    margin-left: 50px;
+    width: 50px;
+    margin-left: 100px;
     transition: 0.4s;
 }
 
 .navbar-brand {
     height: 70px;
-    padding: 5px;
+    margin: 1px;
+    padding: 0;
 }
 
 .nav-item {
@@ -220,7 +223,6 @@ span.color {
     justify-content: center !important;
     width: 150px !important;
 }
-
 .modal-body p {
     text-align: justify;
 }
@@ -333,6 +335,9 @@ footer p {
 /*#region-------------------------------MediaQ------------------------------------*/
 
 @media (max-width: 576px) {
+    #logo {
+        margin-left: 50px;
+    }
     .section-head {
         padding-top: 15px;
     }
