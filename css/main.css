@@ -51,7 +51,7 @@ p {
 
 .navbar-toggler {
     background-color: teal;
-    margin-right: 50px;
+    margin-right: 30px;
 }
 
 .navbar {
@@ -336,7 +336,7 @@ footer p {
 
 @media (max-width: 576px) {
     #logo {
-        margin-left: 50px;
+        margin-left: 30px;
     }
     .section-head {
         padding-top: 15px;
