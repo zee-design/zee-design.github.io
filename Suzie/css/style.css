@@ -11,11 +11,7 @@
 @font-face {
     font-family: 'procopiusregular';
     src: url('../fonts/webfontkit-20200428-104433/procopius-webfont.eot');
-    src: url('../fonts/webfontkit-20200428-104433/procopius-webfont.eot?#iefix') format('embedded-opentype'), 
-         url('../fonts/webfontkit-20200428-104433/procopius-webfont.woff2') format('woff2'), 
-         url('../fonts/webfontkit-20200428-104433/procopius-webfont.woff') format('woff'), 
-         url('../fonts/webfontkit-20200428-104433/procopius-webfont.ttf') format('truetype'), 
-         url('../fonts/webfontkit-20200428-104433/procopius-webfont.svg#procopiusregular') format('svg');
+    src: url('../fonts/webfontkit-20200428-104433/procopius-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/webfontkit-20200428-104433/procopius-webfont.woff2') format('woff2'), url('../fonts/webfontkit-20200428-104433/procopius-webfont.woff') format('woff'), url('../fonts/webfontkit-20200428-104433/procopius-webfont.ttf') format('truetype'), url('../fonts/webfontkit-20200428-104433/procopius-webfont.svg#procopiusregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -27,22 +23,6 @@ body {
 
 .procopius {
     font-family: procopiusregular;
-}
-
-.navbar-brand {
-    margin: 0;
-    padding: 0;
-    justify-self: end;
-    align-self: center;
-}
-
-.logo {
-    height: 50px;
-    padding-right: 10px;
-}
-
-#phoneNo {
-    color: #ffffff;
 }
 
 .dividerPicture {
@@ -73,9 +53,10 @@ body {
 .page-img {
     justify-self: center;
 }
+
 /*#endregion*/
 
-/*#region----------------------Bootstrap Override---------------------------------*/
+/*#region------------------------------Nav----------------------------------------*/
 
 nav {
     display: grid;
@@ -88,6 +69,7 @@ nav {
     padding: 0 20px;
     transition: 0.5s;
 }
+
 .nav-info {
     display: grid;
     grid-template-columns: 50% 1fr;
@@ -98,10 +80,28 @@ nav p {
     align-self: center;
 }
 
+.navbar-brand {
+    margin: 0;
+    padding: 0;
+    justify-self: end;
+    align-self: center;
+}
+
+.logo {
+    height: 50px;
+    padding-right: 10px;
+}
+
+#phoneNo {
+    color: #ffffff;
+}
+
 .nav>li>a:hover {
     margin-top: 5px;
-    border: 2px solid #4c69b86b;
+    border: 2px solid #ffffff;
     border-radius: 10px;
+    color: #ffffff;
+    background-color: #ffffff98;
 }
 
 a {
@@ -179,6 +179,7 @@ span {
 
 .sub-service-cat2 {
     background: url(../img/services-border.png) repeat-x top;
+    padding-top: 25px;
 }
 
 .sub-service-cat1, .sub-service-cat2 {
@@ -188,6 +189,7 @@ span {
 /*#endregion*/
 
 /*#region---------------------------Products--------------------------------------*/
+
 .productsSection h2 {
     border-bottom: 1px solid #959595;
     margin: 20px 0 20px 0;
@@ -219,7 +221,7 @@ span {
 
 /*#endregion*/
 
-/*#region---------------------------Contact---------------------------------------*/    
+/*#region---------------------------Contact---------------------------------------*/
 
 #contactSection {
     background-image: url(../img/contact.jpg);
@@ -247,6 +249,7 @@ span {
     text-decoration: none;
     color: black;
 }
+
 .contact-right {
     display: grid;
     align-self: center;
@@ -277,7 +280,6 @@ footer h2 {
 .social {
     text-align: right;
     font-size: 30px;
-    
 }
 
 .fa {
@@ -306,6 +308,7 @@ footer h2 {
 /*#endregion*/
 
 /*#region-----------------------------Animi---------------------------------------*/
+
 #animiSection {
     text-align: center;
     display: grid;
@@ -327,11 +330,14 @@ footer h2 {
 /*#endregion*/
 
 /*#region--------------------------Mesotherapy------------------------------------*/
+
 #mesoSection {
     text-align: center;
     display: grid;
 }
+
 /*#endregion*/
 
 /*#region-------------------------------3D----------------------------------------*/
+
 /*#endregion*/
