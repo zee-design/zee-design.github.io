@@ -33,7 +33,7 @@
   <nav id="navbar">
     <div class="nav-info">
       <a class="navbar-brand" href="index.html"><img src="img/suzieLogo.jpg" alt="logo" class="img-responsive logo"></a>
-      <p id="phoneNo">075-900-58087</p>
+      <a id="phoneNo" href="tel:07590058087" style="text-decoration: none;">07590058087</a>
     </div>
     <ul class="nav justify-content-end">
       <li class="nav-item menu-item">
@@ -277,18 +277,17 @@
 
 
   <!-- Contact Section -->
-  <a href="https://www.google.com/maps/dir//Suzie%C2%B4s+Serenity+Room,+8+Sturgess+Ave,+London+NW4+3TS/@51.5778083,-0.2299131,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x487610db89f0d2e1:0x61ff8260b8d7a181!2m2!1d-0.2277244!2d51.5778083"
-    target="blank" id="contactSection">
-    <div class="contact-wrapper">
+  <div id="contactSection">
+    <a href="https://www.google.com/maps/dir//Suzie%C2%B4s+Serenity+Room,+8+Sturgess+Ave,+London+NW4+3TS/@51.5778083,-0.2299131,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x487610db89f0d2e1:0x61ff8260b8d7a181!2m2!1d-0.2277244!2d51.5778083"
+    target="blank" class="contact-wrapper">
       <div class="contact-left">
         <h4 class="procopius">CONTACT</h4>
         <p>Suzie's Serenity Room is located just a 10 minutes walk from Hendon Central Tube.</p>
         <p>Appointments available only by booking over the phone or text message.</p>
         <h4 class="procopius">ADDRESS</h4>
-        <p>8 Sturgess Avenue</p>
-        <p>London NW4 3TS</p>
+        <p>8 Sturgess Avenue<br>London NW4 3TS</p>
         <h4 class="procopius">PHONE</h4>
-        <p>075-900-58087</p>
+        <p>07590058087</p>
       </div>
       <div class="contact-right">
         <h4 class="procopius">HOURS</h4>
@@ -300,8 +299,8 @@
         <p>Saturday: 10am - 7pm</p>
         <p>Sunday: CLOSED</p>
       </div>
-    </div>
-  </a>
+    </a>
+  </div>
 
 
 
@@ -332,7 +331,7 @@
     window.addEventListener("scroll", function () {
       var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       if (scrollTop > lastScrollTop) {
-        navbar.style.top = "-50px";
+        navbar.style.top = "-62px";
       } 
       else if (window.innerWidth <768 && scrollTop > lastScrollTop) {
         navbar.style.top = "-120px";
