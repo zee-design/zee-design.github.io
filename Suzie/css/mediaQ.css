@@ -12,7 +12,7 @@
 
 @media (max-width: 768px) {
     nav {
-        height: 120px;
+        height: 140px;
         align-content: center;
         grid-template-columns: 30% 1fr;
     }
