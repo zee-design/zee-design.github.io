@@ -1,0 +1,609 @@
+/*#region ------------------------------Basic Style--------------------------------*/
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-card-bg: rgba(53, 11, 0, 0.692);
+    --content-bg: #0000009a;
+}
+
+html, body{
+    height: 100%;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: beige;
+	background-color: #805F43;
+	background-image: url(img/bg-tile2.jpg);
+	background-repeat: round;
+}
+
+button {
+	border-radius: 10px;
+	color: beige;
+	background: #0d0d13;
+	border: 1px solid;
+	padding: 10px 20px;
+    font-family: 'Caveat Brush';
+}
+
+.rc-img {
+    max-width: 100%;
+	background-color: var(--content-bg);
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+	color: peru;
+	padding: 5px;
+}
+
+a:hover{
+    color: #642F00;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+	padding: 0;
+}
+
+h3 {
+    background-color: var(--content-bg);
+	border-radius: 10px;
+}
+
+h4 {
+    font-weight: normal;
+	margin: 0;
+	padding-left: 20px;
+}
+
+.title {
+    font-family: 'Caveat Brush';
+	font-size: 32px;
+}
+
+li {
+    font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	text-align: justify;
+	padding: 10px;
+}
+
+.container{
+    max-width: 100%;
+}
+
+.nav-item {
+    margin: auto;
+    min-width: 150px;
+}
+/*#endregion*/
+
+/*#region ------------------------------Mobile Overlay-----------------------------*/
+#myMobile {
+    display: none;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 26px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 40px;
+}
+/*#endregion*/
+
+/*#region --------------------------Back to the Top Button-------------------------*/
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    cursor: pointer;
+    width: 60px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+/*#endregion*/
+
+/*#region ------------------------------Tab Menu Colours-------------------------------*/
+.card-header h5 a{
+    color: beige;
+}
+
+#tab-1, #heading-1 {
+    background: #0d0d13;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#tab-2, #heading-2 {
+    background: #fca644;
+    text-align: center;
+    border-radius: 10px;
+   
+}
+
+#tab-3, #heading-3 {
+    background: #8f9c17;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#tab-4, #heading-4 {
+    background: #247021;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#tab-5, #heading-5 {
+    background: #232170;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#tab-6, #heading-6 {
+    background: #e66d0b;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#tab-7, #heading-7 {
+    background: #e60b54;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#tab-8, #heading-8 {
+    background: #472204;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#tab-9, #heading-9 {
+    background: #e60be6;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#tab-1, #tab-2, #tab-3, #tab-4, #tab-5, #tab-6, #tab-7, #tab-8, #tab-9{
+    border-radius: 10px;
+    color: beige;
+    border: 1px solid;
+    padding: 10px 20px;
+    font-family: 'Caveat Brush';
+}
+
+#tab-1:hover, #tab-2:hover, #tab-3:hover, #tab-4:hover, #tab-5:hover, #tab-6:hover {
+    background-color: var(--main-card-bg);
+}
+/*#endregion*/
+
+/*#region ------------------------Bootstrap Override-------------------------------*/
+.nav-tabs {
+    display:none;
+    border-bottom: 0;
+}
+
+.card{
+    background-color: var(--main-card-bg);
+    margin-bottom: 10px;
+    position: inherit;
+}
+
+.card-body{
+    padding: 0;
+}
+/*#endregion*/
+
+/*#region ----------------------------Top Grid-------------------------------------*/
+.welcome {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-areas: 
+    "logo favs" 
+    "intro intro" 
+    "comment comment";
+    gap: 10px;
+    max-width: 100%;
+    font-size: 24px;
+    justify-items: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--main-card-bg);
+    border-radius: 5px;
+}
+
+.logo {
+    grid-area: logo;
+    background-color: transparent;
+    justify-self: right;
+}
+
+.favs {
+    grid-area: favs;
+    justify-self: left;
+    align-self: center;
+    font-size: 3em;
+    text-align: center;
+}
+
+.intro {
+    grid-area: intro;
+    text-align: center;
+}
+
+.comment {
+    grid-area: comment;
+    text-align: center;
+}
+/*#endregion*/
+
+/*#region ---------------------------Recipe Grid-----------------------------------*/
+.recipe {
+    grid-area: recipe;
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    grid-template-areas: 
+    "cat_name cat_name"
+    "rc_block ingredients"
+    "method method";
+}
+
+.cat_name {
+    grid-area: cat_name;
+    justify-self: center;
+    font-size: 42px;
+    padding: 30px 0 30px 0;
+}
+
+.rc_block {
+    grid-area: rc_block;
+    padding: 20px;
+    justify-self: center;
+    text-align: center;
+    margin: 10px;
+    
+}
+
+.ingredients {
+    grid-area: ingredients;
+    padding: 20px;
+    background-color: var(--content-bg);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.ingredients ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px 50px;
+}
+
+.method {
+    grid-area: method;
+    padding: 20px;
+    background-color: var(--content-bg);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.rc_block {
+    grid-area: rc_block;
+    max-width: 100%;
+    justify-self: center;
+}
+/*#endregion*/
+
+@media(min-width:768px) {
+    .nav-tabs {
+        display: flex;
+    }
+    
+    .card {
+        border: none;
+    }
+    
+    .card .card-header {
+        display:none;
+    }  
+    
+    .card .collapse{
+        display:block;
+    }
+}
+
+#divider{
+    text-align: center;
+    font-size: 42px;
+}
+
+/*#region ------------------------------Comments-----------------------------------*/
+.comments {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    grid-template-areas: 
+    "comment-people comment-form";
+    background-color: var(--main-card-bg);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.comments-list {
+    padding: 0;
+}
+.commenter {
+    border-radius: 50%;
+    float: left;
+    margin: auto 10px;
+}
+.comment-date {
+    padding: 5px;
+}
+.comment-text {
+    background-color: var(--content-bg);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.comment-text p {
+    text-align: justify;
+}
+.comment-people {
+    grid-area: comment-people;
+}
+.comment-form {
+    grid-area: comment-form;
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 1fr 1fr 250px 1fr;
+    grid-template-areas:
+    "lac lac" 
+    "yourName yourEmail"
+    "yourMessage yourMessage"
+    ". postComment";
+    background-color: var(--content-bg);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    gap: 10px;
+}
+#lac {
+    grid-area: lac;
+}
+#yourName {
+    grid-area: yourName;
+}
+#yourEmail {
+    grid-area: yourEmail;
+}
+#yourMessage {
+    grid-area: yourMessage;
+}
+#postComment {
+    grid-area: postComment;
+    max-width: 200px;
+    justify-self: end;
+    font-size: 20px;    
+    padding: 5px;
+}
+#postComment:hover {
+    background-color: #555;
+}
+#yourName input, #yourEmail input, #yourMessage textarea {
+    width: 100%;
+    height: 100%;
+}
+/*#endregion*/
+
+/*#region -----------------------------------Footer--------------------------------*/
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 65% 1fr;
+    grid-template-areas: 
+    "ex-sign1 disclaimer ex-sign2"
+    "ex-sign1 social ex-sign2";
+    background-color: var(--main-card-bg);
+}
+.ex-sign1 {
+    grid-area: ex-sign1;
+    max-width: 100px;
+    justify-self: center;
+    align-self: center;
+}
+.ex-sign2 {
+    grid-area: ex-sign2;
+    max-width: 100px;
+    justify-self: center;
+    align-self: center;
+}
+.disclaimer {
+    grid-area: disclaimer;
+    text-align: center;
+}
+.social {
+    grid-area: social;
+    justify-self: center;
+}
+/*#endregion*/
+
+/*#region ----------------------------Media Queries--------------------------------*/
+@media (max-width: 1000px) {
+    .nav-tabs {
+        display: none;
+    }
+    #myMobile {
+        display: block;
+        margin: 10px 15px;
+        padding: 5px;
+        border: 1px solid beige;
+        position: fixed;
+        background: #00000086;
+        color: beige;
+        font-size: 20px;
+    }
+    #myBtn {
+        width: 50px;
+        height: 30px;
+        right: 5px;
+        padding: 0;
+    }
+    .logo {
+        align-self: center;
+        justify-self: right;
+    }
+    .favs {
+        align-self: center;
+        justify-self: left;
+        font-size: 2em;
+    }
+    button {
+        align-self: center;
+        font-size: 28px;
+    }
+    .close {
+        color: beige;
+        opacity: 1;
+        font-size: 28px;
+        text-align: center;
+        float: none;
+        font-weight: 400;
+        text-shadow: none;
+    }
+    .close:hover {
+        color: white;
+    }
+    label{
+        font-size: 26px;
+    }
+    .recipe {
+        grid-template-areas: 
+        "cat_name cat_name"
+        "rc_block ingredients"
+        "method method";
+    }
+    .rc_block {
+        align-self: center;
+    }
+    #divider {
+        text-align: center;
+        font-size: 26px;
+    }
+    #footer {
+        position: relative;
+        height: 400px;
+        margin-top: -400px;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 700px) {
+    .recipe {
+        grid-template-areas: 
+        "cat_name cat_name"
+        "rc_block rc_block"
+        "ingredients ingredients"
+        "method method";
+    }
+    .ingredients, .method {
+        margin: 5px;
+    }
+    .comments {
+        grid-template-areas: 
+        "comment-people comment-people"
+        "comment-form comment-form";
+    }
+    .comments-list {
+        padding: 0;
+    }
+    .ex-sign1, .ex-sign2 {
+        max-width: 80px;
+    }
+}
+   
+@media (max-width: 500px) {
+    .menu-list li {
+        padding: 5px;
+    }
+    .menu-list a {
+        padding: 5px;
+    }
+    .logo {
+        align-self: center;
+    }
+    .recipe {
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "cat_name"
+        "rc_block"
+        "ingredients"
+        "method";
+    }
+    .ingredients, .method {
+        margin: 5px;
+    }
+    .ingredients ul {
+        display: block;
+    }
+    #myMobile {
+        font-size: 16px;
+    }
+    footer {
+        padding: 5px;
+        background: url(/img/exclamation-triangle-solid.png);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .ex-sign1, .ex-sign2 {
+        display: none;
+    }
+}
+/*#endregion*/
