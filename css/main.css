@@ -221,6 +221,10 @@ span.color {
     width: 150px !important;
 }
 
+.modal-body p {
+    text-align: justify;
+}
+
 /*#endregion*/
 
 /*#region---------------------------Parallax-Pic-3--------------------------------*/
