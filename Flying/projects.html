@@ -7,6 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>RC Models by Rastaman - Projects</title>
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="/Flying/gallery-grid.css">
+
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -42,13 +52,19 @@
 
     <hr>
 
-    <div class="plane">
-        <div class="gallery">
-            <div class="gallery-item">
-                <div class="content"><img src="/img/placeholder.jpg" alt="picture of RC model plane"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="/img/placeholder2.jpg" alt="picture of RC model plane"></div>
+    <div class="project-plane">
+        <div class="tz-gallery">
+            <div class="row">
+                <div class="col-sm-9 col-md-6">
+                    <a class="lightbox" href="/Flying/img/placeholder.jpg">
+                        <img src="/Flying/img/placeholder.jpg" alt="picture of RC model plane">
+                    </a>
+                </div>
+                <div class="col-sm-9 col-md-6">
+                    <a class="lightbox" href="/Flying/img/placeholder2.jpg">
+                        <img src="/Flying/img/placeholder2.jpg" alt="picture of RC model plane">
+                    </a>
+                </div>
             </div>
         </div>
         <div class="project-description">
@@ -73,17 +89,23 @@
                 of text, so let me just copy-paste
                 this to see it will take up space.</p>
         </div>
-
+    </div>
 
         <hr>
 
-
-        <div class="gallery">
-            <div class="gallery-item">
-                <div class="content"><img src="/img/placeholder.jpg" alt="picture of RC model plane"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="/img/placeholder2.jpg" alt="picture of RC model plane"></div>
+    <div class="project-plane">
+        <div class="tz-gallery">
+            <div class="row">
+                <div class="col-sm-9 col-md-6">
+                    <a class="lightbox" href="/Flying/img/placeholder.jpg">
+                        <img src="/Flying/img/placeholder.jpg" alt="picture of RC model plane">
+                    </a>
+                </div>
+                <div class="col-sm-9 col-md-6">
+                    <a class="lightbox" href="/Flying/img/placeholder2.jpg">
+                        <img src="/Flying/img/placeholder2.jpg" alt="picture of RC model plane">
+                    </a>
+                </div>
             </div>
         </div>
         <div class="project-description">
@@ -108,7 +130,6 @@
                 of text, so let me just copy-paste
                 this to see it will take up space.</p>
         </div>
-
     </div>
     <hr>
 
@@ -129,39 +150,8 @@
 
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
     <script>
-        var gallery = document.querySelector('.gallery');
-        var getVal = function (elem, style) { return parseInt(window.getComputedStyle(elem).getPropertyValue(style)); };
-        var getHeight = function (item) { return item.querySelector('.content').getBoundingClientRect().height; };
-        var resizeAll = function () {
-            var altura = getVal(gallery, 'grid-auto-rows');
-            var gap = getVal(gallery, 'grid-row-gap');
-            gallery.querySelectorAll('.gallery-item').forEach(function (item) {
-                var el = item;
-                el.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
-            });
-        };
-        gallery.querySelectorAll('img').forEach(function (item) {
-            item.classList.add('byebye');
-            if (item.complete) {
-                console.log(item.src);
-            }
-            else {
-                item.addEventListener('load', function () {
-                    var altura = getVal(gallery, 'grid-auto-rows');
-                    var gap = getVal(gallery, 'grid-row-gap');
-                    var gitem = item.parentElement.parentElement;
-                    gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
-                    item.classList.remove('byebye');
-                });
-            }
-        });
-        window.addEventListener('resize', resizeAll);
-        gallery.querySelectorAll('.gallery-item').forEach(function (item) {
-            item.addEventListener('click', function () {
-                item.classList.toggle('full');
-            });
-        });
-
+        baguetteBox.run('.tz-gallery');
     </script>
 </body>

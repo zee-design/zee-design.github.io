@@ -98,8 +98,11 @@ nav {
     width: 100%;
     position: fixed;
     top: 0;
+    z-index: 10;
 }
-
+.tz-gallery{
+    z-index: 1;
+}
 ul {
     text-align: center;
     padding: 20px 15px 15px 15px;
@@ -225,6 +228,7 @@ figcaption {
 /*#endregion*/
 
 /*#region -------------------------------Social-------------------------------------*/
+
 .social {
     text-align: right;
     font-size: 30px;
@@ -267,19 +271,37 @@ figcaption {
 
 /*#region -----------------------------Projects-------------------------------------*/
 
+.project-plane {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    gap: 10px;
+}
+
+.project-plane .tz-gallery {
+    padding: 20px;
+}
+
 .project-title {
     text-align: center;
     margin: 30px;
 }
+
 .project-description {
     display: grid;
     margin: 10px;
+    padding: 20px;
+}
 
+@media (min-width: 992px) {
+    .col-sm-9, .col-md-6 {
+        padding: 5px;
+    }
 }
 
 /*#endregion*/
 
 /*#region-------------------------------Gallery-----------------------------------*/
+
 .hello {
     opacity: 1 !important;
 }
@@ -364,32 +386,32 @@ figcaption {
     }
 }
 
-
-
 @keyframes zoomin {
     0% {
         max-width: 50%;
-        transform: scale(1,1);
+        transform: scale(1, 1);
         filter: blur(4px);
     }
-
     50% {
-        transform: scale(1.2,1.2);
+        transform: scale(1.2, 1.2);
     }
-
     100% {
-        transform: scale(1,1);
+        transform: scale(1, 1);
     }
 }
+
 /*#endregion*/
 
 /*#region -------------------------------Footer-------------------------------------*/
+
 footer {
     background: var(--yellow);
 }
+
 .footer-paragraph p {
     font-size: 12px;
 }
+
 /*#endregion*/
 
 /*#region ------------------------------Media Queries-------------------------------*/
