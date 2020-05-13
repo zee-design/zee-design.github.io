@@ -8,6 +8,9 @@
     .contact-left, .contact-right {
         padding: 10px;
     }
+    footer h2 {
+        text-align: center;
+    }
 }
 
 @media (max-width: 768px) {
