@@ -11,6 +11,9 @@
     footer h2 {
         text-align: center;
     }
+    .tz-gallery {
+        padding: 10px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -44,6 +47,9 @@
     .nav-info a, .nav-info p {
         grid-column: span 2;
         justify-self: center;
+    }
+    #carouselExampleIndicators {
+        width: 80%;
     }
 }
 
@@ -83,5 +89,8 @@
     }
     .contact-left, .contact-right {
         padding: 3px;
+    }
+    #carouselExampleIndicators {
+        width: 100%;
     }
 }
