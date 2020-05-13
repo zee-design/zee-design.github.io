@@ -18,7 +18,7 @@
     }
     .logo {
         height: 100%;
-    }    
+    }
     .contactSection {
         background-position-x: -800px;
     }
@@ -29,14 +29,14 @@
         grid-column: span 2;
     }
     .contact-left {
-        border-bottom: 1px solid #959595; 
+        border-bottom: 1px solid #959595;
     }
 }
 
 @media (max-width: 645px) {
     .nav-info {
         grid-template-rows: 50% 1fr;
-        align-self: center;        
+        align-self: center;
     }
     .nav-info a, .nav-info p {
         grid-column: span 2;
@@ -45,15 +45,40 @@
 }
 
 @media (max-width: 576px) {
+    .section p {
+        padding: 0 10px;
+    }
+    .service-cat {
+        grid-template-columns: 65% 1fr;
+    }
     ul {
         padding: 10px;
     }
     .service-cat {
         grid-column: span 2;
     }
+    .service-cat p {
+        text-align: left;
+    }
+    div p.pRight {
+        padding: 0;
+        text-align: right;
+    }
+    .products-list {
+        grid-template-columns: 90px 1fr;
+        gap: 10px;
+    }
+    .products-list p.pAbout {
+        padding: 0;
+    }
     .contact-wrapper {
         margin: 20px auto;
-        width: 70%;
+        width: 75%;
     }
-    
+    .contact-right p {
+        text-align: left;
+    }
+    .contact-left, .contact-right {
+        padding: 3px;
+    }
 }

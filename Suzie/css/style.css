@@ -54,9 +54,21 @@ body {
     justify-self: center;
 }
 
+.tz-gallery {
+    z-index: 1;
+}
+
+.lightbox img {
+    width: 100%;
+}
+
 /*#endregion*/
 
 /*#region------------------------------Nav----------------------------------------*/
+
+#navbar {
+    z-index: 10;
+}
 
 nav {
     display: grid;
@@ -68,6 +80,7 @@ nav {
     background: var(--bar);
     padding: 0 20px;
     transition: 0.5s;
+    align-items: center;
 }
 
 .nav-info {
@@ -97,7 +110,6 @@ nav p {
 }
 
 .nav>li>a:hover {
-    margin-top: 5px;
     border: 2px solid #ffffff;
     border-radius: 10px;
     color: #ffffff;
@@ -336,8 +348,31 @@ footer h2 {
     display: grid;
 }
 
+.meso ul {
+    display: grid;
+    list-style-position: inside;
+    text-align: left;
+    justify-content: center;
+}
+
 /*#endregion*/
 
 /*#region-------------------------------3D----------------------------------------*/
 
+#dddSection {
+    display: grid;
+}
+
+#carouselExampleIndicators {
+    width: 60%;
+    justify-self: center;
+}
+
+.carousel-item {
+    width: 100%;
+}
+
+.carousel-caption {
+    text-align: center;
+}
 /*#endregion*/
