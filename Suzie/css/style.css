@@ -287,7 +287,7 @@ footer {
 
 footer h2 {
     color: white;
-    text-align: right;
+    text-align: center;
 }
 
 .social {
@@ -362,11 +362,42 @@ footer h2 {
 
 #dddSection {
     display: grid;
+    grid-template-columns: 40% 1fr;
+    gap: 50px 20px;
+}
+
+#dddSection .procopius {
+    grid-column: span 2;
+}
+
+.ddd-welcome {
+    padding: 5px;
+    align-self: center;
+    justify-self: center;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    text-align: center;
+    padding: 5px;
+}
+
+.ddd-welcome figure img {
+    width: 100%;
+}
+
+.ddd-info {
+    align-self: center;
+    justify-self: center;
 }
 
 #carouselExampleIndicators {
     width: 60%;
     justify-self: center;
+    grid-column: span 2;
 }
 
 .carousel-item {
@@ -374,6 +405,97 @@ footer h2 {
 }
 
 .carousel-caption {
+    text-align: center;
+}
+
+/*#endregion*/
+
+/*#region-----------------------------Tattoo--------------------------------------*/
+
+#tattooSection {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    gap: 50px 20px;
+}
+
+#tattooSection img {
+    width: 100%;
+}
+
+.tattoo-pic-txt {
+    align-self: center;
+    justify-self: center;
+}
+
+#tattooSection article, #tattooSection .tz-gallery {
+    grid-column: span 2;
+}
+
+#tattooSection article {
+    display: grid;
+    gap: 30px;
+}
+
+/*#endregion*/
+
+/*#region---------------------------Sugaring--------------------------------------*/
+
+.sugaring-welcome {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    gap: 50px 20px;
+}
+
+.sugaring-welcome figure {
+    align-self: center;
+    justify-self: center;
+}
+
+.sugaring-welcome figure img {
+    width: 100%;
+}
+
+/*#endregion*/
+
+/*#region----------------------------Studex---------------------------------------*/
+#studexSection h5 {
+    margin-top: 50px;
+    text-align: center;
+}
+.stex-pic {
+    width: 100%;
+}
+
+#studex-40 {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    gap: 30px;
+}
+
+#sutdex-right {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 20%;
+    gap: 30px;
+}
+
+#sutdex-left {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    gap: 30px;
+}
+
+.studex {
+    align-self: center;
+    justify-self: center;
+}
+
+.studex h3 {
+    padding: 10px;
     text-align: center;
 }
 /*#endregion*/

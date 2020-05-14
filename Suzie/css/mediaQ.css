@@ -14,6 +14,12 @@
     .tz-gallery {
         padding: 10px;
     }
+    .tattoo-info ul, .tattoo-info ol {
+        text-align: justify;
+    }
+    .tattoo-info ol {
+        padding-right: 5px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -37,6 +43,13 @@
     .contact-left {
         border-bottom: 1px solid #959595;
     }
+    #animiSection p {
+        padding: 10px;
+    }
+    .ddd-welcome, .ddd-info, #tattooSection img, .tattoo-pic-txt, .sugaring-welcome figure, .sugaring-info, .stex-pic, .studex {
+        grid-column: span 2;
+    }
+
 }
 
 @media (max-width: 645px) {
