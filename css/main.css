@@ -234,6 +234,10 @@ aside p, #about p {
     width: 150px !important;
 }
 
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem teal;
+}
+
 .modal-header h5 {
     font-family: 'Righteous';
 }
