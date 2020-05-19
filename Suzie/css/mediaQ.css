@@ -8,6 +8,9 @@
     .contact-left, .contact-right {
         padding: 10px;
     }
+    footer {
+        grid-template-columns: 90% 1fr;
+    }
     footer h2 {
         text-align: center;
     }
@@ -102,6 +105,9 @@
     }
     .contact-left, .contact-right {
         padding: 3px;
+    }
+    footer {
+        grid-template-columns: 85% 1fr;
     }
     #carouselExampleIndicators {
         width: 100%;
