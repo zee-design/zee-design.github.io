@@ -460,10 +460,12 @@ figcaption {
 /*#endregion*/
 
 /*#region----------------------------Studex---------------------------------------*/
+
 #studexSection h5 {
     margin-top: 50px;
     text-align: center;
 }
+
 .stex-pic {
     width: 100%;
 }
@@ -497,5 +499,26 @@ figcaption {
 .studex h3 {
     padding: 10px;
     text-align: center;
+}
+
+/*#endregion*/
+
+/*#region----------------------------Facial---------------------------------------*/
+
+/*#endregion*/
+
+/*#region---------------------------Make-Up---------------------------------------*/
+
+.makeUp {
+    width: 100%;
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+#hilton {
+    width: 100%;
+}
+.makeUp {
+    margin: auto;
 }
 /*#endregion*/
