@@ -516,7 +516,18 @@ figcaption {
 /*#endregion*/
 
 /*#region----------------------------Facial---------------------------------------*/
+#facialSection .procopius {
+    margin-top: 50px;
+}
 
+#seven-herbs {
+    display: flex;
+    margin: auto;
+}
+
+.gallery-container .tz-gallery img {
+    height: 180px;
+}
 /*#endregion*/
 
 /*#region---------------------------Make-Up---------------------------------------*/
