@@ -23,6 +23,9 @@
     .tattoo-info ol {
         padding-right: 5px;
     }
+    .facial-pic {
+        width: 70%;
+    }
 }
 
 @media (max-width: 768px) {
