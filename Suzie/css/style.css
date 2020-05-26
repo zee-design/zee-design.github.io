@@ -39,15 +39,8 @@ body {
 
 .section h1, .section h2 {
     text-align: center;
-}
-
-.section h2 {
-    padding: 10px;
-}
-
-.section p {
-    text-align: justify;
-    padding: 0 30px;
+    padding: 20px;
+    margin: 20px;
 }
 
 .page-img {
@@ -63,6 +56,15 @@ body {
     width: 100%;
 }
 
+.center {
+    text-align: center;
+    padding: 10px;
+}
+
+.justify {
+    text-align: justify;
+    padding: 0 30px;
+}
 /*#endregion*/
 
 /*#region------------------------------Nav----------------------------------------*/
@@ -148,17 +150,6 @@ a {
 
 /*#region----------------------------About----------------------------------------*/
 
-#aboutSection {
-    text-align: center;
-}
-
-#aboutSection .welcome p {
-    text-align: center;
-}
-
-.welcome {
-    margin-top: 50px;
-}
 /*#endregion*/
 
 /*#region---------------------------Price List------------------------------------*/
@@ -335,17 +326,7 @@ footer h2 {
 /*#region-----------------------------Animi---------------------------------------*/
 
 #animiSection {
-    text-align: center;
     display: grid;
-}
-
-#animiSection p {
-    text-align: justify;
-    padding: 0 30px;
-}
-
-#animiSection h2 {
-    padding: 10px;
 }
 
 #animiSection a {
@@ -357,7 +338,6 @@ footer h2 {
 /*#region--------------------------Mesotherapy------------------------------------*/
 
 #mesoSection {
-    text-align: center;
     display: grid;
 }
 
@@ -393,7 +373,6 @@ figure {
 }
 
 figcaption {
-    text-align: center;
     padding: 5px;
 }
 
@@ -414,10 +393,6 @@ figcaption {
 
 .carousel-item {
     width: 100%;
-}
-
-.carousel-caption {
-    text-align: center;
 }
 
 /*#endregion*/
@@ -475,7 +450,6 @@ figcaption {
 
 #studexSection h5 {
     margin-top: 50px;
-    text-align: center;
 }
 
 .stex-pic {
@@ -516,18 +490,27 @@ figcaption {
 /*#endregion*/
 
 /*#region----------------------------Facial---------------------------------------*/
-#facialSection .procopius {
+.facialSection .procopius {
     margin-top: 50px;
 }
 
-#seven-herbs {
+#facialSection figure {
+    margin-bottom: 50px;
+}
+
+figure h4 {
+    font-size: 1.2em;
+}
+
+.facial-pic {
     display: flex;
-    margin: auto;
+    margin: 50px auto 0 auto;
 }
 
 .gallery-container .tz-gallery img {
     height: 180px;
 }
+
 /*#endregion*/
 
 /*#region---------------------------Make-Up---------------------------------------*/
