@@ -84,9 +84,9 @@
 
 
     <!-- About Section -->
-    <div class="container section">
-        <div class="row">
-            <h4 class="section-head">A little about me</h4>
+    <div id="about" class="container section">
+        <div class="row section-header">
+            <h4 class="section-title">A little about me</h4>
         </div>
         <span id="about-me" class="anchor"></span>
         <div class="row about-mediaQ">
@@ -94,7 +94,7 @@
                 <img id="head-shot" src="img/head-shot.jpg" alt="Zee's head-shot">
                 <p>A retail background, sabotaged by the love for tech & travel</p>
             </aside>
-            <article id="about" class="wow slideInRight" style="visibility: hidden; animation-name: none;">
+            <article id="about-txt" class="wow slideInRight" style="visibility: hidden; animation-name: none;">
                 <p>Well, I have no idea what to say about myself, so this probably will be edited like 200 million
                     times. But in a short version: I am coming from Hungary, have been living in the UK 10+ years. I
                     have been working these years in retail, but now I decided to look for some adult job. And since I
@@ -113,7 +113,9 @@
 
     <!-- Projects Section -->
     <div id="projects" class="container section">
-        <h4 class="section-head">Projects</h4>
+        <div class="row section-header">
+            <h4 class="section-title">Projects</h4>
+        </div>
         <div class="row">
             <!-- Cooking Project -->
             <!-- Button for Modal -->
@@ -139,7 +141,8 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <p> My first project. Since I enjoy cooking so much, it was a very logical choice. I wanted to
+                            <p> My first project. Since I enjoy cooking so much, it was a very logical choice. I wanted
+                                to
                                 create a friendly, playful looking site with loads of easy recipes to show to my family
                                 and
                                 friends you don't need to be a master chef to cook something delicious.</p>
@@ -148,7 +151,7 @@
                             <button type="button" class="modal-btn btn btn-secondary"
                                 data-dismiss="modal">Close</button>
                             <a href="/Cooking/index.html" target="blank">
-                                <button type="button" class="modal-btn btn btn-primary">Demo</button>
+                                <button type="button" class="modal-btn btn btn-primary demo-btn">Demo</button>
                             </a>
                         </div>
                     </div>
@@ -192,7 +195,7 @@
                             <button type="button" class="modal-btn btn btn-secondary"
                                 data-dismiss="modal">Close</button>
                             <a href="/Flying/index.html" target="blank">
-                                <button type="button" class="modal-btn btn btn-primary">Demo</button>
+                                <button type="button" class="modal-btn btn btn-primary demo-btn">Demo</button>
                             </a>
                         </div>
                     </div>
@@ -234,7 +237,7 @@
                             <button type="button" class="modal-btn btn btn-secondary"
                                 data-dismiss="modal">Close</button>
                             <a href="/Suzie/index.html" target="blank">
-                                <button type="button" class="modal-btn btn btn-primary">Demo</button>
+                                <button type="button" class="modal-btn btn btn-primary demo-btn">Demo</button>
                             </a>
                         </div>
                     </div>
@@ -253,8 +256,8 @@
     <!-- Contact Section -->
     <div id="contact" class="container section">
         <button onclick="topFunction()" id="top-btn" title="Go to top" style="display: block;">Top</button>
-        <div class="row">
-            <h4 class="section-head text-center">Get in touch</h4>
+        <div class="row section-header">
+            <h4 class="section-title text-center">Get in touch</h4>
         </div>
         <div>
             <a href="mailto: zsanett.balogh7@gmail.com"><img class="wow rubberBand soc-logo" src="img/email.png"
@@ -285,6 +288,9 @@
     <script src="js/wow.min.js"></script>
     <script>
         new WOW().init();
+    </script>
+    <script>
+        document.getElementsByClassName("demo-btn").addEventListener("click", hide.bs.modal);
     </script>
 
 </body>
