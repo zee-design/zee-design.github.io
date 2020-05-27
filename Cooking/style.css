@@ -22,25 +22,25 @@ body {
 }
 
 button {
-	border-radius: 10px;
+	border-radius: .625rem;
 	color: beige;
 	background: #0d0d13;
-	border: 1px solid;
-	padding: 10px 20px;
+	border: .0625rem solid;
+	padding: .625rem 1.25rem;
     font-family: 'Caveat Brush';
 }
 
 .rc-img {
     max-width: 100%;
 	background-color: var(--content-bg);
-    border-radius: 10px;
-    margin-bottom: 5px;
+    border-radius: .625rem;
+    margin-bottom: .3125rem;
 }
 
 a {
     text-decoration: none;
 	color: peru;
-	padding: 5px;
+	padding: .3125rem;
 }
 
 a:hover{
@@ -54,25 +54,25 @@ h1, h2, h3, p {
 
 h3 {
     background-color: var(--content-bg);
-	border-radius: 10px;
+	border-radius: .625rem;
 }
 
 h4 {
     font-weight: normal;
 	margin: 0;
-	padding-left: 20px;
+	padding-left: 1.25rem;
 }
 
 .title {
     font-family: 'Caveat Brush';
-	font-size: 32px;
+	font-size: 2em;
 }
 
 li {
     font-family: 'Open Sans', sans-serif;
-	font-size: 18px;
+	font-size: 1.125em;
 	text-align: justify;
-	padding: 10px;
+	padding: .625rem;
 }
 
 .container{
@@ -81,7 +81,7 @@ li {
 
 .nav-item {
     margin: auto;
-    min-width: 150px;
+    min-width: 9.375rem;
 }
 /*#endregion*/
 
@@ -108,13 +108,13 @@ li {
     top: 10%;
     width: 100%;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
 
 .overlay a {
-    padding: 8px;
+    padding: .5rem;
     text-decoration: none;
-    font-size: 26px;
+    font-size: 1.625em;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -127,9 +127,9 @@ li {
 
 .overlay .closebtn {
     position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 40px;
+    top: 1.25rem;
+    right: 2.5rem;
+    font-size: 2.5em;
 }
 /*#endregion*/
 
@@ -137,14 +137,14 @@ li {
 #myBtn {
     display: none;
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: .625rem;
+    right: .625rem;
     z-index: 99;
     cursor: pointer;
-    width: 60px;
-    padding: 5px;
-    border-radius: 10px;
-    font-size: 20px;
+    width: 3.75rem;
+    padding: .3125rem;
+    border-radius: .625rem;
+    font-size: 1.25em;
 }
 
 #myBtn:hover {
@@ -160,63 +160,63 @@ li {
 #tab-1, #heading-1 {
     background: #0d0d13;
     text-align: center;
-    border-radius: 10px;
+    border-radius: .625rem;
 }
 
 #tab-2, #heading-2 {
     background: #fca644;
     text-align: center;
-    border-radius: 10px;
+    border-radius: .625rem;
    
 }
 
 #tab-3, #heading-3 {
     background: #8f9c17;
     text-align: center;
-    border-radius: 10px;
+    border-radius: .625rem;
 }
 
 #tab-4, #heading-4 {
     background: #247021;
     text-align: center;
-    border-radius: 10px;
+    border-radius: .625rem;
 }
 
 #tab-5, #heading-5 {
     background: #232170;
     text-align: center;
-    border-radius: 10px;
+    border-radius: .625rem;
 }
 
 #tab-6, #heading-6 {
     background: #e66d0b;
     text-align: center;
-    border-radius: 10px;
+    border-radius: .625rem;
 }
 
 #tab-7, #heading-7 {
     background: #e60b54;
     text-align: center;
-    border-radius: 10px;
+    border-radius: .625rem;
 }
 
 #tab-8, #heading-8 {
     background: #472204;
     text-align: center;
-    border-radius: 10px;
+    border-radius: .625rem;
 }
 
 #tab-9, #heading-9 {
     background: #e60be6;
     text-align: center;
-    border-radius: 10px;
+    border-radius: .625rem;
 }
 
 #tab-1, #tab-2, #tab-3, #tab-4, #tab-5, #tab-6, #tab-7, #tab-8, #tab-9{
-    border-radius: 10px;
+    border-radius: .625rem;
     color: beige;
-    border: 1px solid;
-    padding: 10px 20px;
+    border: .0625rem solid;
+    padding: .625rem 1.25rem;
     font-family: 'Caveat Brush';
 }
 
@@ -233,7 +233,7 @@ li {
 
 .card{
     background-color: var(--main-card-bg);
-    margin-bottom: 10px;
+    margin-bottom: .625rem;
     position: inherit;
 }
 
@@ -250,14 +250,14 @@ li {
     "logo favs" 
     "intro intro" 
     "comment comment";
-    gap: 10px;
+    gap: .625rem;
     max-width: 100%;
-    font-size: 24px;
+    font-size: 1.2em;
     justify-items: center;
-    padding: 10px;
-    margin: 10px;
+    padding: .625rem;
+    margin: .625rem;
     background-color: var(--main-card-bg);
-    border-radius: 5px;
+    border-radius: .3125rem;
 }
 
 .logo {
@@ -299,39 +299,39 @@ li {
 .cat_name {
     grid-area: cat_name;
     justify-self: center;
-    font-size: 42px;
-    padding: 30px 0 30px 0;
+    font-size: 2.625em;
+    padding: 1.875rem 0 1.875rem 0;
 }
 
 .rc_block {
     grid-area: rc_block;
-    padding: 20px;
+    padding: 1.25rem;
     justify-self: center;
     text-align: center;
-    margin: 10px;
+    margin: .625rem;
     
 }
 
 .ingredients {
     grid-area: ingredients;
-    padding: 20px;
+    padding: 1.25rem;
     background-color: var(--content-bg);
-    border-radius: 10px;
-    margin: 10px;
+    border-radius: .625rem;
+    margin: .625rem;
 }
 
 .ingredients ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5px 50px;
+    gap: .3125rem 3.125rem;
 }
 
 .method {
     grid-area: method;
-    padding: 20px;
+    padding: 1.25rem;
     background-color: var(--content-bg);
-    border-radius: 10px;
-    margin: 10px;
+    border-radius: .625rem;
+    margin: .625rem;
 }
 
 .rc_block {
@@ -341,7 +341,7 @@ li {
 }
 /*#endregion*/
 
-@media(min-width:768px) {
+@media(min-width:48rem) {
     .nav-tabs {
         display: flex;
     }
@@ -361,7 +361,7 @@ li {
 
 #divider{
     text-align: center;
-    font-size: 42px;
+    font-size: 2.625em;
 }
 
 /*#region ------------------------------Comments-----------------------------------*/
@@ -371,9 +371,9 @@ li {
     grid-template-areas: 
     "comment-people comment-form";
     background-color: var(--main-card-bg);
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
+    padding: .625rem;
+    margin: .625rem;
+    border-radius: .3125rem;
 }
 .comments-list {
     padding: 0;
@@ -381,16 +381,16 @@ li {
 .commenter {
     border-radius: 50%;
     float: left;
-    margin: auto 10px;
+    margin: auto .625rem;
 }
 .comment-date {
-    padding: 5px;
+    padding: .3125rem;
 }
 .comment-text {
     background-color: var(--content-bg);
-    padding: 20px;
-    border-radius: 10px;
-    margin: 10px;
+    padding: 1.25rem;
+    border-radius: .625rem;
+    margin: .625rem;
 }
 .comment-text p {
     text-align: justify;
@@ -402,17 +402,17 @@ li {
     grid-area: comment-form;
     display: grid;
     grid-template-columns: 50% 1fr;
-    grid-template-rows: 1fr 1fr 250px 1fr;
+    grid-template-rows: 1fr 1fr 15.625rem 1fr;
     grid-template-areas:
     "lac lac" 
     "yourName yourEmail"
     "yourMessage yourMessage"
     ". postComment";
     background-color: var(--content-bg);
-    padding: 20px;
-    border-radius: 10px;
-    margin: 10px;
-    gap: 10px;
+    padding: 1.25rem;
+    border-radius: .625rem;
+    margin: .625rem;
+    gap: .625rem;
 }
 #lac {
     grid-area: lac;
@@ -428,10 +428,10 @@ li {
 }
 #postComment {
     grid-area: postComment;
-    max-width: 200px;
+    max-width: 12.5rem;
     justify-self: end;
-    font-size: 20px;    
-    padding: 5px;
+    font-size: 1.25rem;    
+    padding: .3125rem;
 }
 #postComment:hover {
     background-color: #555;
@@ -453,13 +453,13 @@ li {
 }
 .ex-sign1 {
     grid-area: ex-sign1;
-    max-width: 100px;
+    max-width: 6.25rem;
     justify-self: center;
     align-self: center;
 }
 .ex-sign2 {
     grid-area: ex-sign2;
-    max-width: 100px;
+    max-width: 6.25rem;
     justify-self: center;
     align-self: center;
 }
@@ -474,24 +474,24 @@ li {
 /*#endregion*/
 
 /*#region ----------------------------Media Queries--------------------------------*/
-@media (max-width: 1000px) {
+@media (max-width: 62.5rem) {
     .nav-tabs {
         display: none;
     }
     #myMobile {
         display: block;
-        margin: 10px 15px;
-        padding: 5px;
-        border: 1px solid beige;
+        margin: .625rem .9375rem;
+        padding: .3125rem;
+        border: .0625rem solid beige;
         position: fixed;
         background: #00000086;
         color: beige;
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     #myBtn {
-        width: 50px;
-        height: 30px;
-        right: 5px;
+        width: 3.125rem;
+        height: 1.875rem;
+        right: .3125rem;
         padding: 0;
     }
     .logo {
@@ -505,12 +505,12 @@ li {
     }
     button {
         align-self: center;
-        font-size: 28px;
+        font-size: 1.75em;
     }
     .close {
         color: beige;
         opacity: 1;
-        font-size: 28px;
+        font-size: 1.75em;
         text-align: center;
         float: none;
         font-weight: 400;
@@ -520,7 +520,7 @@ li {
         color: white;
     }
     label{
-        font-size: 26px;
+        font-size: 1.625em;
     }
     .recipe {
         grid-template-areas: 
@@ -533,19 +533,19 @@ li {
     }
     #divider {
         text-align: center;
-        font-size: 26px;
+        font-size: 1.625em;
     }
     #footer {
         position: relative;
-        height: 400px;
-        margin-top: -400px;
+        height: 625rem;
+        margin-top: -25rem;
         text-align: center;
-        padding: 10px 0;
-        font-size: 16px;
+        padding: .625rem 0;
+        font-size: 1em;
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 43.75rem) {
     .recipe {
         grid-template-areas: 
         "cat_name cat_name"
@@ -554,7 +554,7 @@ li {
         "method method";
     }
     .ingredients, .method {
-        margin: 5px;
+        margin: .3125rem;
     }
     .comments {
         grid-template-areas: 
@@ -565,16 +565,16 @@ li {
         padding: 0;
     }
     .ex-sign1, .ex-sign2 {
-        max-width: 80px;
+        max-width: 5rem;
     }
 }
    
-@media (max-width: 500px) {
+@media (max-width: 31.25rem) {
     .menu-list li {
-        padding: 5px;
+        padding: .3125rem;
     }
     .menu-list a {
-        padding: 5px;
+        padding: .3125rem;
     }
     .logo {
         align-self: center;
@@ -588,16 +588,16 @@ li {
         "method";
     }
     .ingredients, .method {
-        margin: 5px;
+        margin: .3125rem;
     }
     .ingredients ul {
         display: block;
     }
     #myMobile {
-        font-size: 16px;
+        font-size: 1em;
     }
     footer {
-        padding: 5px;
+        padding: .3125rem;
         background: url(/img/exclamation-triangle-solid.png);
         background-position: center;
         background-repeat: no-repeat;
