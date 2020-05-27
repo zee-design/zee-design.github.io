@@ -52,24 +52,24 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 5em;
     font-weight: 100;
     margin: 0;
     text-align: center;
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 2.5em;
 }
 
 h3 {
-    font-size: 26px;
+    font-size: 1.625em;
 }
 
 .dauphin-p {
     font-family: dauphinregular;
-    font-size: 26px;
-    margin: 0 20px;
+    font-size: 1.625em;
+    margin: 0 1.25rem;
 }
 
 .greet-ctr {
@@ -77,15 +77,15 @@ h3 {
 }
 
 .plane {
-    padding: 5px;
+    padding: .3125rem;
     background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 5px;
+    border-radius: .3125rem;
 }
 
 hr {
-    height: 20px;
+    height: 1.25rem;
     background-image: linear-gradient(to bottom, dimgray, var(--yellow));
-    margin: 20px 0 50px 0;
+    margin: 1.25rem 0 3.125rem 0;
 }
 
 /*#endregion*/
@@ -94,7 +94,7 @@ hr {
 
 nav {
     background: rgba(0, 0, 0, 0.75);
-    height: 70px;
+    height: 4.375rem;
     width: 100%;
     position: fixed;
     top: 0;
@@ -105,14 +105,14 @@ nav {
 }
 ul {
     text-align: center;
-    padding: 20px 15px 15px 15px;
+    padding: 1.25rem .9375rem .9375rem .9375rem;
 }
 
 li {
     display: inline;
-    padding: 15px 10px 5px 10px;
-    border: 2px solid var(--yellow);
-    border-radius: 10px;
+    padding: .9375rem .625rem .3125rem .625rem;
+    border: .125rem solid var(--yellow);
+    border-radius: .625rem;
 }
 
 .active {
@@ -126,7 +126,7 @@ li {
 nav a {
     text-decoration: none;
     font-family: dauphinregular;
-    font-size: 28px;
+    font-size: 1.75em;
     color: beige;
 }
 
@@ -144,9 +144,9 @@ nav a:hover {
 
 .post {
     display: grid;
-    max-width: 1300px;
-    margin: 200px auto auto auto;
-    gap: 10px 50px;
+    max-width: 81.25rem;
+    margin: 12.5rem auto auto auto;
+    gap: .625rem 3.125rem;
     grid-template-columns: 2fr 12fr 3fr;
 }
 
@@ -161,12 +161,12 @@ nav a:hover {
 }
 
 figcaption {
-    font-size: 10px;
+    font-size: .625em;
 }
 
 .post>blockquote {
     grid-column: 1 / -1;
-    font-size: 60px;
+    font-size: 3.75em;
     font-family: dauphinregular;
     text-align: center;
     margin: 0;
@@ -174,9 +174,9 @@ figcaption {
 
 .post>hr {
     grid-column: 1 / -1;
-    height: 20px;
+    height: 1.25rem;
     background-image: linear-gradient(to bottom, dimgray, var(--yellow));
-    margin: 20px 0 50px 0;
+    margin: 1.25rem 0 3.125rem 0;
 }
 
 .post>blockquote>p {
@@ -192,18 +192,18 @@ figcaption {
     flex-direction: column;
     align-self: flex-start;
     background: #c0c0c0;
-    padding: 10px;
+    padding: .625rem;
 }
 
 .tip-left {
     grid-column: 1 / span 1;
     text-align: right;
-    border-right: 2px solid var(--yellow);
+    border-right: .125rem solid var(--yellow);
 }
 
 .tip-right {
     grid-column: span 1 / -1;
-    border-left: 2px solid var(--yellow);
+    border-left: .125rem solid var(--yellow);
 }
 
 /*#endregion*/
@@ -211,18 +211,18 @@ figcaption {
 /*#region -------------------------------Images-------------------------------------*/
 
 #bb-img {
-    max-width: 150px;
+    max-width: 9.375rem;
 }
 
 .three-pcs {
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
     grid-template-rows: 5fr 1fr;
-    gap: 10px;
+    gap: .625rem;
 }
 
 .three-pcs>img {
-    max-width: 200px;
+    max-width: 12.5rem;
 }
 
 /*#endregion*/
@@ -231,15 +231,15 @@ figcaption {
 
 .social {
     text-align: right;
-    font-size: 30px;
+    font-size: 1.875em;
 }
 
 .fa {
-    padding: 5px;
-    width: 40px;
+    padding: .3125rem;
+    width: 2.5rem;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
+    margin: .3125rem .125rem;
     border-radius: 50%;
 }
 
@@ -274,27 +274,27 @@ figcaption {
 .project-plane {
     display: grid;
     grid-template-columns: 30% 1fr;
-    gap: 10px;
+    gap: .625rem;
 }
 
 .project-plane .tz-gallery {
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .project-title {
     text-align: center;
-    margin: 30px;
+    margin: 1.875rem;
 }
 
 .project-description {
     display: grid;
-    margin: 10px;
-    padding: 20px;
+    margin: .625rem;
+    padding: 1.25rem;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 62rem) {
     .col-sm-9, .col-md-6 {
-        padding: 5px;
+        padding: .3125rem;
     }
 }
 
@@ -343,24 +343,24 @@ figcaption {
     display: grid;
     grid-column-gap: 8px;
     grid-row-gap: 8px;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(15.625rem, 1fr));
     grid-auto-rows: 8px;
-    margin: 10px;
+    margin: .625rem;
 }
 
 .gallery img {
     max-width: 100%;
     border-radius: 8px;
-    box-shadow: 0 0 16px #333;
+    box-shadow: 0 0 1rem #333;
     transition: all 1.5s ease;
 }
 
 .gallery img:hover {
-    box-shadow: 0 0 32px #333;
+    box-shadow: 0 0 2rem #333;
 }
 
 .gallery .content {
-    padding: 4px;
+    padding: .25rem;
 }
 
 .gallery .gallery-item {
@@ -374,13 +374,13 @@ figcaption {
     transform: scale(1.025);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5rem) {
     .gallery {
         grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 25rem) {
     .gallery {
         grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
     }
@@ -390,7 +390,7 @@ figcaption {
     0% {
         max-width: 50%;
         transform: scale(1, 1);
-        filter: blur(4px);
+        filter: blur(.25rem);
     }
     50% {
         transform: scale(1.2, 1.2);
@@ -409,39 +409,39 @@ footer {
 }
 
 .footer-paragraph p {
-    font-size: 12px;
+    font-size: .75em;
 }
 
 /*#endregion*/
 
 /*#region ------------------------------Media Queries-------------------------------*/
 
-@media (max-width: 1000px) {
+@media (max-width: 62.5rem) {
     .post {
-        grid-template-columns: 100px 1fr;
-        margin: 50px 0;
+        grid-template-columns: 6.25rem 1fr;
+        margin: 3.125rem 0;
         max-width: 100%;
-        gap: 10px 30px;
+        gap: .625rem 1.875rem;
     }
     .post>* {
         grid-column: 2 / -2;
     }
     .post>blockquote {
-        font-size: 30px;
+        font-size: 1.875em;
     }
     blockquote p {
-        padding: 0 0 0 100px;
+        padding: 0 0 0 6.25rem;
     }
     .greet-ctr {
         grid-column: 1 / -1;
-        padding: 10px;
+        padding: .625rem;
     }
     p {
-        margin: 15px 100px 15px 15px;
+        margin: .9375rem 6.25rem .9375rem .9375rem;
     }
     .tip {
         grid-column: 1;
-        border-right: 2px solid var(--yellow);
+        border-right: .125rem solid var(--yellow);
         border-left: none;
     }
     .tip-left p, .tip-right p {
@@ -457,29 +457,29 @@ footer {
         grid-template-rows: 3fr 1fr;
     }
     .three-pcs>img {
-        max-width: 100px;
+        max-width: 6.25rem;
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 43.75rem) {
     nav {
-        height: 50px;
+        height: 3.125rem;
     }
     ul {
-        padding: 15px 15px 15px 10px;
+        padding: .9375rem .9375rem .9375rem .625rem;
     }
     li {
-        padding: 5px 10px 5px 10px;
-        border-radius: 5px;
+        padding: .3125rem .625rem .3125rem .625rem;
+        border-radius: .3125rem;
     }
     nav a {
-        font-size: 16px;
+        font-size: 1em;
     }
     .post {
         display: block;
     }
     .post>blockquote {
-        font-size: 30px;
+        font-size: 1.875em;
     }
     #bb-container {
         display: flex;
@@ -494,8 +494,8 @@ footer {
         justify-self: center;
         border-right: none;
         border-bottom: none;
-        border-top: 2px solid var(--yellow);
-        border-left: 2px solid var(--yellow);
+        border-top: .125rem solid var(--yellow);
+        border-left: .125rem solid var(--yellow);
     }
     .tip-left {
         align-self: flex-start;
@@ -504,23 +504,23 @@ footer {
         padding: 0;
     }
     p {
-        margin: 0 50px;
+        margin: 0 3.125rem;
     }
     figure img {
-        max-width: 360px;
+        max-width: 22.5rem;
     }
     .three-pcs {
         display: inline;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 32.65625rem) {
     h1 {
-        font-size: 40px;
+        font-size: 2.5em;
         font-weight: bold;
     }
     h2, h3 {
-        font-size: 32px;
+        font-size: 2em;
     }
 }
 
