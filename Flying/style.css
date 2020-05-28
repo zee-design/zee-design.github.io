@@ -290,6 +290,8 @@ figcaption {
     display: grid;
     margin: 10px;
     padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
 }
 
 @media (min-width: 992px) {
