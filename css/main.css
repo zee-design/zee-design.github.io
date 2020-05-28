@@ -22,34 +22,29 @@ body {
     width: 90%;
     background-color: #fcf888;
     background-image: linear-gradient(315deg, #fcf888 0%, #bddcf1 74%);
-    box-shadow: 0 .625rem 1.25rem .9375rem  rgba(0, 0, 0, 0.500);
+    box-shadow: 0 10px 20px 15px rgba(0, 0, 0, 0.500);
 }
 
-.section-header {
-    padding: 2.5rem 0;
-}
-
-.section-title {
+.section-head {
     text-align: center;
     margin: 0 auto;
-    padding: 1.25rem;
+    padding: 20px;
     font-weight: bolder;
     font-family: 'Righteous', cursive !important;
-    font-size: 2.125em;
+    font-size: 30px;
 }
 
 p {
-    font-size: 1.25em;
+    font-size: 20px;
 }
 
 #aside-photo p {
-    font-size: .875em;
+    font-size: 14px;
 }
 
 a, h3 span, footer p {
     font-family: 'Righteous', cursive;
 }
-
 /*#endregion*/
 
 /*#region---------------------------------Nav-------------------------------------*/
@@ -60,34 +55,34 @@ a, h3 span, footer p {
 
 .navbar-toggler {
     background-color: teal;
-    margin-right: 1.875rem;
+    margin-right: 30px;
 }
 
 .navbar {
-    border-bottom: .125rem solid teal;
+    border-bottom: 2px solid teal;
     margin-bottom: 0;
     padding: 0;
 }
 
 #logo {
-    border-radius: .3125rem;
-    width: 3.125rem;
-    margin-left: 6.25rem;
+    border-radius: 5px;
+    width: 50px;
+    margin-left: 100px;
     transition: 0.4s;
 }
 
 .navbar-brand {
-    height: 4.375rem;
-    margin: .0625rem;
+    height: 70px;
+    margin: 1px;
     padding: 0;
 }
 
 .nav-item {
-    margin: 0 .9375rem;
+    margin: 0 15px;
 }
 
 .nav-link {
-    font-size: 1.75em;
+    font-size: 28px;
 }
 
 /*#endregion*/
@@ -100,7 +95,7 @@ a, h3 span, footer p {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding-top: 15.625rem;
+    padding-top: 250px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -112,7 +107,7 @@ a, h3 span, footer p {
 #pp1 h3 {
     font-weight: bolder;
     color: beige;
-    font-size: 1.75em;
+    font-size: 28px;
 }
 
 #text-board {
@@ -123,27 +118,23 @@ a, h3 span, footer p {
 
 span.color {
     color: teal;
-    text-shadow: .125rem .125rem #000;
+    text-shadow: 2px 2px #000;
 }
 
 .highlight {
     background-color: teal;
     color: #e3f2fd;
-    text-shadow: .125rem .125rem #000;
+    text-shadow: 2px 2px #000;
 }
 
 /*#endregion*/
 
 /*#region--------------------------------About------------------------------------*/
 
-#about {
-    min-height: 80%;
-}
-
 .anchor {
-    height: 5rem;
+    height: 80px;
     display: block;
-    margin-top: -5rem;
+    margin-top: -80px;
     /* this is again negative value of the height of your header */
     visibility: hidden;
 }
@@ -151,11 +142,11 @@ span.color {
 #aside-photo {
     width: 30%;
     text-align: center;
-    padding: 1.875rem;
+    padding: 30px;
 }
 
 #aside-photo p {
-    padding: .625rem;
+    padding: 10px;
     font-style: italic;
     float: left;
 }
@@ -163,15 +154,15 @@ span.color {
 #head-shot {
     width: 100%;
     border-radius: 50%;
-    border: .125rem solid teal;
+    border: 2px solid teal;
 }
 
-#about-txt {
+#about {
     width: 70%;
     float: right;
     text-align: justify;
-    padding: 3.125rem;
-    margin-top: .9375rem;
+    padding: 50px;
+    margin-top: 15px;
     display: flex;
 }
 
@@ -189,7 +180,7 @@ aside p, #about p {
     background-size: cover;
     background-position: center;
     text-align: center;
-    padding-top: 9.375rem;
+    padding-top: 150px;
     background-attachment: fixed;
 }
 
@@ -198,18 +189,17 @@ aside p, #about p {
 /*#region-------------------------------Projects----------------------------------*/
 
 .proj-links {
-    padding: 1.875rem;
+    padding: 15px;
     margin: auto;
 }
 
 .proj-links img {
     width: 100%;
-    border-radius: .25rem;
 }
 
 .proj-links button {
     width: 50% !important;
-    margin-top: .9375rem !important;
+    margin-top: 15px !important;
     display: flex;
 }
 
@@ -221,15 +211,15 @@ aside p, #about p {
 */
 
 .proj-thumb {
-    border: .125rem solid black;
-    box-shadow: 0 .625rem 1.25rem .9375rem rgba(0, 0, 0, 0.500);
+    border: 2px solid black;
+    box-shadow: 0 10px 20px 15px rgba(0, 0, 0, 0.500);
 }
 
 .modal-btn {
     background-color: black !important;
     border: black !important;
     font-family: 'Righteous', cursive;
-    width: 6.25rem;
+    width: 100px;
 }
 
 .modal-btn a {
@@ -238,13 +228,13 @@ aside p, #about p {
 }
 
 .modal-btn:hover {
-    box-shadow: .1875rem .25rem grey;
+    box-shadow: 3px 4px grey;
 }
 
 .btn-primary {
     margin: auto!important;
     justify-content: center !important;
-    width: 9.375rem !important;
+    width: 150px !important;
 }
 
 .btn-primary:focus {
@@ -270,7 +260,7 @@ aside p, #about p {
     background-size: cover;
     background-position: center;
     text-align: center;
-    padding-top: 9.375rem;
+    padding-top: 150px;
     background-attachment: fixed;
 }
 
@@ -280,32 +270,32 @@ aside p, #about p {
 
 #contact {
     text-align: center;
-    margin-bottom: 3.125rem;
+    margin-bottom: 50px;
 }
 
 #top-btn {
     display: none;
     position: fixed;
-    bottom: 2.5rem;
-    right: 1.25rem;
+    bottom: 40px;
+    right: 20px;
     z-index: 99;
     background-color: black !important;
     border: black !important;
     font-family: 'Righteous', cursive;
     color: white;
-    border-radius: .375rem;
-    padding: .3125rem .9375rem;
+    border-radius: 6px;
+    padding: 5px 15px;
     transition: 0.4s;
 }
 
 #top-btn:hover {
-    box-shadow: .1875rem .25rem grey;
+    box-shadow: 3px 4px grey;
 }
 
 .soc-logo {
-    width: 3.125rem;
-    margin: 1.5625rem;
-    margin: 1.5625rem;
+    width: 50px;
+    margin: 25px;
+    margin: 25px;
 }
 
 /*#endregion*/
@@ -314,7 +304,7 @@ aside p, #about p {
 
 footer {
     background: #e3f2fd;
-    border-top: .125rem solid teal;
+    border-top: 2px solid teal;
     text-align: center;
 }
 
@@ -369,29 +359,29 @@ footer p {
 
 @media (max-width: 576px) {
     #logo {
-        margin-left: 1.875rem;
+        margin-left: 30px;
     }
     .section-head {
-        padding-top: .9375rem;
+        padding-top: 15px;
     }
     .about-mediaQ {
         display: grid;
     }
     #aside-photo {
         width: 80%;
-        padding: .3125rem;
+        padding: 5px;
         justify-self: center;
     }
     #about {
         width: 90%;
-        padding: .3125rem;
+        padding: 5px;
         justify-self: center;
     }
     .proj-links button {
         width: 80% !important;
     }
     #top-btn {
-        bottom: 2.25rem;
+        bottom: 36px;
     }
 }
 
