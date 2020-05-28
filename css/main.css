@@ -170,12 +170,10 @@ span.color {
     width: 70%;
     float: right;
     text-align: justify;
-    padding: 50px;
-    margin-top: 15px;
-    display: flex;
+    padding: 0 50px 50px 30px;
 }
 
-aside p, #about p {
+#about p {
     font-family: 'Raleway';
 }
 
@@ -197,6 +195,15 @@ aside p, #about p {
 
 /*#region-------------------------------Projects----------------------------------*/
 
+.projects-txt {
+    padding: 30px;
+    text-align: justify;
+}
+
+#projects .row {
+    padding-bottom: 20px;
+}
+
 .proj-links {
     padding: 15px;
     margin: auto;
@@ -211,13 +218,6 @@ aside p, #about p {
     margin-top: 15px !important;
     display: flex;
 }
-
-/*
-.proj-links img{
-    margin: auto !important;
-    text-align: center !important;
-}
-*/
 
 .proj-thumb {
     border: 2px solid black;
@@ -303,8 +303,7 @@ aside p, #about p {
 
 .soc-logo {
     width: 50px;
-    margin: 25px;
-    margin: 25px;
+    margin: 0 25px 25px 25px;
 }
 
 /*#endregion*/
@@ -381,10 +380,14 @@ footer p {
         padding: 5px;
         justify-self: center;
     }
-    #about {
+    #about-txt {
         width: 90%;
         padding: 5px;
         justify-self: center;
+    }
+    .projects-txt {
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
     .proj-links button {
         width: 80% !important;
