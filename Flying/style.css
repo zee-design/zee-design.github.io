@@ -100,9 +100,11 @@ nav {
     top: 0;
     z-index: 10;
 }
-.tz-gallery{
+
+.tz-gallery {
     z-index: 1;
 }
+
 ul {
     text-align: center;
     padding: 20px 15px 15px 15px;
@@ -274,7 +276,6 @@ figcaption {
 .project-plane {
     display: grid;
     grid-template-columns: 30% 1fr;
-    gap: 10px;
 }
 
 .project-plane .tz-gallery {
@@ -292,12 +293,6 @@ figcaption {
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 5px;
-}
-
-@media (min-width: 992px) {
-    .col-sm-9, .col-md-6 {
-        padding: 5px;
-    }
 }
 
 /*#endregion*/
@@ -461,8 +456,21 @@ footer {
     .three-pcs>img {
         max-width: 100px;
     }
+    .project-plane .tz-gallery {
+        padding: 5px;
+    }
+    .project-plane .tz-gallery .row {
+        margin: 0;
+    }
+    .project-description {
+        margin: 0 10px 0 0;
+        padding: 5px;
+    }
+    .project-description p {
+        margin: 0;
+        padding: 10px;
+    }
 }
-
 @media (max-width: 700px) {
     nav {
         height: 50px;
@@ -515,14 +523,23 @@ footer {
         display: inline;
     }
 }
-
-@media (max-width: 500px) {
+@media (min-width: 576px) {
+    .col-sm-9, .col-md-6 {
+        margin: 0 auto;
+        padding: 0 5px;
+    }
+}
+@media (max-width: 575px) {
     h1 {
         font-size: 40px;
         font-weight: bold;
     }
-    h2, h3 {
+    h2 {
         font-size: 32px;
+    }
+    .col-sm-9, .col-md-6 {
+        margin: 0 auto;
+        padding: 0 5px;
     }
 }
 
