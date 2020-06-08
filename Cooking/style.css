@@ -5,77 +5,87 @@
 }
 
 :root {
-    --main-card-bg: rgba(53, 11, 0, 0.692);
-    --content-bg: #0000009a;
+    --main-card-bg: #350b00d7;
+    --content-bg: linear-gradient(180deg, rgba(53, 11, 0, 0.969625350140056) 0%, rgba(28, 27, 28, 1) 100%);
 }
 
-html, body{
+html,
+body {
     height: 100%;
 }
-
 body {
-	font-family: 'Open Sans', sans-serif;
-	color: beige;
-	background-color: #805F43;
-	background-image: url(img/bg-tile2.jpg);
-	background-repeat: round;
+    font-family: "Open Sans", sans-serif;
+    color: beige;
+    background-color: #805f43;
+    background: 
+    /* top, transparent red */ 
+    linear-gradient(
+      rgba(39, 39, 39, 0.65), 
+      rgba(38, 38, 38, 0.65)
+    ), 
+    url(img/bg-tile2.jpg);
+    background-repeat: round;
 }
 
 button {
-	border-radius: 10px;
-	color: beige;
-	background: #0d0d13;
-	border: 1px solid;
-	padding: 10px 20px;
-    font-family: 'Caveat Brush';
+    border-radius: 10px;
+    color: beige;
+    background: #0d0d13;
+    border: 1px solid;
+    padding: 10px 20px;
+    font-family: "Caveat Brush";
 }
 
 .rc-img {
     max-width: 100%;
-	background-color: var(--content-bg);
+    background: var(--content-bg);
     border-radius: 10px;
     margin-bottom: 5px;
 }
 
 a {
     text-decoration: none;
-	color: peru;
-	padding: 5px;
+    color: peru;
+    padding: 5px;
 }
 
-a:hover{
-    color: #642F00;
+a:hover {
+    color: #642f00;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
     margin: 0;
-	padding: 0;
+    padding: 0;
 }
 
 h3 {
-    background-color: var(--content-bg);
-	border-radius: 10px;
+    background: var(--content-bg);
+    border-radius: 10px;
 }
 
 h4 {
     font-weight: normal;
-	margin: 0;
-	padding-left: 20px;
+    margin: 0;
+    padding-left: 20px;
 }
 
 .title {
-    font-family: 'Caveat Brush';
-	font-size: 32px;
+    font-family: "Caveat Brush";
+    font-size: 32px;
+    padding: 5px;
 }
 
 li {
-    font-family: 'Open Sans', sans-serif;
-	font-size: 18px;
-	text-align: justify;
-	padding: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    padding: 10px;
 }
 
-.container{
+.container {
     max-width: 100%;
 }
 
@@ -153,103 +163,125 @@ li {
 /*#endregion*/
 
 /*#region ------------------------------Tab Menu Colours-------------------------------*/
-.card-header h5 a{
+.card-header h5 a {
     color: beige;
 }
 
-#tab-1, #heading-1 {
+#tab-1,
+#heading-1 {
     background: #0d0d13;
     text-align: center;
     border-radius: 10px;
 }
 
-#tab-2, #heading-2 {
+#tab-2,
+#heading-2 {
     background: #fca644;
     text-align: center;
     border-radius: 10px;
-   
 }
 
-#tab-3, #heading-3 {
+#tab-3,
+#heading-3 {
     background: #8f9c17;
     text-align: center;
     border-radius: 10px;
 }
 
-#tab-4, #heading-4 {
+#tab-4,
+#heading-4 {
     background: #247021;
     text-align: center;
     border-radius: 10px;
 }
 
-#tab-5, #heading-5 {
+#tab-5,
+#heading-5 {
     background: #232170;
     text-align: center;
     border-radius: 10px;
 }
 
-#tab-6, #heading-6 {
+#tab-6,
+#heading-6 {
     background: #e66d0b;
     text-align: center;
     border-radius: 10px;
 }
 
-#tab-7, #heading-7 {
+#tab-7,
+#heading-7 {
     background: #e60b54;
     text-align: center;
     border-radius: 10px;
 }
 
-#tab-8, #heading-8 {
+#tab-8,
+#heading-8 {
     background: #472204;
     text-align: center;
     border-radius: 10px;
 }
 
-#tab-9, #heading-9 {
+#tab-9,
+#heading-9 {
     background: #e60be6;
     text-align: center;
     border-radius: 10px;
 }
 
-#tab-1, #tab-2, #tab-3, #tab-4, #tab-5, #tab-6, #tab-7, #tab-8, #tab-9{
+#tab-1,
+#tab-2,
+#tab-3,
+#tab-4,
+#tab-5,
+#tab-6,
+#tab-7,
+#tab-8,
+#tab-9 {
     border-radius: 10px;
     color: beige;
     border: 1px solid;
     padding: 10px 20px;
-    font-family: 'Caveat Brush';
+    font-family: "Caveat Brush";
 }
 
-#tab-1:hover, #tab-2:hover, #tab-3:hover, #tab-4:hover, #tab-5:hover, #tab-6:hover {
-    background-color: var(--main-card-bg);
+#tab-1:hover,
+#tab-2:hover,
+#tab-3:hover,
+#tab-4:hover,
+#tab-5:hover,
+#tab-6:hover {
+    background: var(--main-card-bg);
 }
 /*#endregion*/
 
 /*#region ------------------------Bootstrap Override-------------------------------*/
 .nav-tabs {
-    display:none;
+    display: none;
     border-bottom: 0;
 }
 
-.card{
-    background-color: var(--main-card-bg);
+.card {
+    background: transparent;
     margin-bottom: 10px;
     position: inherit;
 }
 
-.card-body{
+.card-body {
     padding: 0;
 }
+
 /*#endregion*/
 
 /*#region ----------------------------Top Grid-------------------------------------*/
 .welcome {
     display: grid;
     grid-template-columns: 30% 1fr;
-    grid-template-areas: 
-    "logo favs" 
-    "intro intro" 
-    "comment comment";
+    grid-template-areas:
+        "logo favs"
+        "intro intro"
+        "comment comment";
     gap: 10px;
     max-width: 100%;
     font-size: 24px;
@@ -262,7 +294,7 @@ li {
 
 .logo {
     grid-area: logo;
-    background-color: transparent;
+    background: transparent;
     justify-self: right;
 }
 
@@ -290,10 +322,10 @@ li {
     grid-area: recipe;
     display: grid;
     grid-template-columns: 25% 1fr;
-    grid-template-areas: 
-    "cat_name cat_name"
-    "rc_block ingredients"
-    "method method";
+    grid-template-areas:
+        "cat_name cat_name"
+        "rc_block ingredients"
+        "method method";
 }
 
 .cat_name {
@@ -305,17 +337,15 @@ li {
 
 .rc_block {
     grid-area: rc_block;
-    padding: 20px;
     justify-self: center;
     text-align: center;
-    margin: 10px;
-    
+    margin: auto 0 auto 10px;
 }
 
 .ingredients {
     grid-area: ingredients;
     padding: 20px;
-    background-color: var(--content-bg);
+    background: var(--content-bg);
     border-radius: 10px;
     margin: 10px;
 }
@@ -329,37 +359,32 @@ li {
 .method {
     grid-area: method;
     padding: 20px;
-    background-color: var(--content-bg);
+    background: var(--content-bg);
     border-radius: 10px;
     margin: 10px;
 }
 
-.rc_block {
-    grid-area: rc_block;
-    max-width: 100%;
-    justify-self: center;
-}
 /*#endregion*/
 
-@media(min-width:768px) {
+@media (min-width: 768px) {
     .nav-tabs {
         display: flex;
     }
-    
+
     .card {
         border: none;
     }
-    
+
     .card .card-header {
-        display:none;
-    }  
-    
-    .card .collapse{
-        display:block;
+        display: none;
+    }
+
+    .card .collapse {
+        display: block;
     }
 }
 
-#divider{
+#divider {
     text-align: center;
     font-size: 42px;
 }
@@ -368,9 +393,8 @@ li {
 .comments {
     display: grid;
     grid-template-columns: 40% 1fr;
-    grid-template-areas: 
-    "comment-people comment-form";
-    background-color: var(--main-card-bg);
+    grid-template-areas: "comment-people comment-form";
+    background: var(--main-card-bg);
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
@@ -387,7 +411,7 @@ li {
     padding: 5px;
 }
 .comment-text {
-    background-color: var(--content-bg);
+    background: var(--content-bg);
     padding: 20px;
     border-radius: 10px;
     margin: 10px;
@@ -404,11 +428,11 @@ li {
     grid-template-columns: 50% 1fr;
     grid-template-rows: 1fr 1fr 250px 1fr;
     grid-template-areas:
-    "lac lac" 
-    "yourName yourEmail"
-    "yourMessage yourMessage"
-    ". postComment";
-    background-color: var(--content-bg);
+        "lac lac"
+        "yourName yourEmail"
+        "yourMessage yourMessage"
+        ". postComment";
+    background: var(--content-bg);
     padding: 20px;
     border-radius: 10px;
     margin: 10px;
@@ -430,13 +454,15 @@ li {
     grid-area: postComment;
     max-width: 200px;
     justify-self: end;
-    font-size: 20px;    
+    font-size: 20px;
     padding: 5px;
 }
 #postComment:hover {
-    background-color: #555;
+    background: #555;
 }
-#yourName input, #yourEmail input, #yourMessage textarea {
+#yourName input,
+#yourEmail input,
+#yourMessage textarea {
     width: 100%;
     height: 100%;
 }
@@ -446,10 +472,10 @@ li {
 .footer {
     display: grid;
     grid-template-columns: 1fr 65% 1fr;
-    grid-template-areas: 
-    "ex-sign1 disclaimer ex-sign2"
-    "ex-sign1 social ex-sign2";
-    background-color: var(--main-card-bg);
+    grid-template-areas:
+        "ex-sign1 disclaimer ex-sign2"
+        "ex-sign1 social ex-sign2";
+    background: var(--main-card-bg);
 }
 .ex-sign1 {
     grid-area: ex-sign1;
@@ -519,14 +545,14 @@ li {
     .close:hover {
         color: white;
     }
-    label{
+    label {
         font-size: 26px;
     }
     .recipe {
-        grid-template-areas: 
-        "cat_name cat_name"
-        "rc_block ingredients"
-        "method method";
+        grid-template-areas:
+            "cat_name cat_name"
+            "rc_block ingredients"
+            "method method";
     }
     .rc_block {
         align-self: center;
@@ -547,28 +573,30 @@ li {
 
 @media (max-width: 700px) {
     .recipe {
-        grid-template-areas: 
-        "cat_name cat_name"
-        "rc_block rc_block"
-        "ingredients ingredients"
-        "method method";
+        grid-template-areas:
+            "cat_name cat_name"
+            "rc_block rc_block"
+            "ingredients ingredients"
+            "method method";
     }
-    .ingredients, .method {
+    .ingredients,
+    .method {
         margin: 5px;
     }
     .comments {
-        grid-template-areas: 
-        "comment-people comment-people"
-        "comment-form comment-form";
+        grid-template-areas:
+            "comment-people comment-people"
+            "comment-form comment-form";
     }
     .comments-list {
         padding: 0;
     }
-    .ex-sign1, .ex-sign2 {
+    .ex-sign1,
+    .ex-sign2 {
         max-width: 80px;
     }
 }
-   
+
 @media (max-width: 500px) {
     .menu-list li {
         padding: 5px;
@@ -581,13 +609,14 @@ li {
     }
     .recipe {
         grid-template-columns: 100%;
-        grid-template-areas: 
-        "cat_name"
-        "rc_block"
-        "ingredients"
-        "method";
+        grid-template-areas:
+            "cat_name"
+            "rc_block"
+            "ingredients"
+            "method";
     }
-    .ingredients, .method {
+    .ingredients,
+    .method {
         margin: 5px;
     }
     .ingredients ul {
@@ -602,7 +631,8 @@ li {
         background-position: center;
         background-repeat: no-repeat;
     }
-    .ex-sign1, .ex-sign2 {
+    .ex-sign1,
+    .ex-sign2 {
         display: none;
     }
 }
