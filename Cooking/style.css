@@ -264,6 +264,7 @@ li {
 
 .card {
     background: transparent;
+    border: none;
     margin-bottom: 10px;
     position: inherit;
 }
