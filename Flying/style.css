@@ -295,9 +295,13 @@ figcaption {
 }
 
 .project-txt {
-    display: grid;
-    grid-template-columns: 50% 1fr;
-    gap: 20px;
+    columns: 2 200px;
+    column-gap: 20px;
+}
+
+.project-txt p {
+    font-size: 16px;
+    padding: 20px;
 }
 
 /*#endregion*/
@@ -527,9 +531,7 @@ footer {
     .three-pcs {
         display: inline;
     }
-    .project-txt {
-        gap: 5px;
-    }
+    
 }
 @media (min-width: 576px) {
     .col-sm-9, .col-md-6 {
