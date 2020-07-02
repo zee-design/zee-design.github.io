@@ -310,6 +310,7 @@ span.color {
     width: 50px;
     margin: 0 25px 25px 25px;
 }
+
 .hidden {
     display: none;
 }
@@ -345,14 +346,12 @@ svg {
     border-color: #cdd;
 }
 
-.share-button,
-.copy-link {
+.share-button, .copy-link {
     padding-left: 30px;
     padding-right: 30px;
 }
 
-.share-button,
-.share-dialog {
+.share-button, .share-dialog {
     background: transparent;
     border: none;
 }
@@ -475,6 +474,18 @@ footer p {
 /*#endregion*/
 
 /*#region-------------------------------MediaQ------------------------------------*/
+
+@media (max-width: 990px) {
+    .share-dialog.is-open {
+        left: 15%;
+    }
+}
+
+@media (max-width: 767px) {
+    .share-dialog.is-open {
+        left: 3%;
+    }
+}
 
 @media (max-width: 576px) {
     #logo {
