@@ -35,7 +35,7 @@
         grid-template-columns: 30% 1fr;
     }
     .logo {
-        height: 100%;
+        height: 100px;
     }
     #navbar>* {
         font-size: 21px;
@@ -65,7 +65,7 @@
 
 @media (max-width: 645px) {
     .nav-info {
-        grid-template-rows: 50% 1fr;
+        grid-template-rows: 80% 1fr;
         align-self: center;
     }
     .nav-info a, .nav-info p {
