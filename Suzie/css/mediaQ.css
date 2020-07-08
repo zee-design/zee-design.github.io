@@ -1,4 +1,14 @@
 @media (max-width: 992px) {
+    #navbar {
+        padding: 0 15px 0 0;
+    }
+    .nav-info a {
+        font-size: 0.85rem;
+    }
+    #phoneNo {
+        justify-self: start;
+        padding: 0;
+    }
     .contact-wrapper {
         margin: 100px 0 50px 50px;
         padding: 15px;
@@ -34,11 +44,15 @@
         align-content: center;
         grid-template-columns: 30% 1fr;
     }
-    .logo {
-        height: 100px;
+    .nav-item {
+        height: 45px;
+        width: 120px;
     }
-    #navbar>* {
-        font-size: 21px;
+    .nav-link, .nav-info a {
+        padding: 0;
+    }
+    .logo {
+        height: 90px;
     }
     .contactSection {
         background-position-x: -800px;
@@ -78,6 +92,12 @@
 }
 
 @media (max-width: 576px) {
+    #navbar {
+        padding: 0 5px 0 0;
+    }
+    #navbar ul {
+        padding: 0;
+    }
     .section p {
         padding: 0 10px;
     }

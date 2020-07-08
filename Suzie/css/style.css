@@ -93,7 +93,13 @@ nav {
 .nav-info {
     display: grid;
     grid-template-columns: 50% 1fr;
+    grid-template-rows: 50px;
+    gap: 5px;
     align-items: center;
+}
+
+.nav-info a {
+    font-size: 1rem;
 }
 
 nav p {
@@ -109,11 +115,14 @@ nav p {
 
 .logo {
     height: 50px;
-    padding-right: 10px;
+    border: 1px solid #b8986f;
 }
 
 #phoneNo {
+    margin: 0;
+    padding: 0;
     color: #ffffff;
+    width: 30px;
 }
 
 .nav>li>a:hover {
@@ -123,8 +132,9 @@ nav p {
     background-color: #ffffff98;
 }
 
-a {
+.nav-link, .nav-info a {
     color: #ffffff;
+    text-align: center;
 }
 
 .nav>li>a:focus {
