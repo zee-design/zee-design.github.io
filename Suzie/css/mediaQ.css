@@ -59,6 +59,9 @@
     .logo {
         height: 90px;
     }
+    .justify {
+        padding: 0;
+    }
     .contactSection {
         background-position-x: -800px;
     }

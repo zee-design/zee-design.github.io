@@ -450,6 +450,9 @@ figcaption {
     display: grid;
     gap: 30px;
 }
+.tattoo-info p {
+    text-align: justify;
+}
 
 /*#endregion*/
 
