@@ -9,6 +9,10 @@
         justify-self: start;
         padding: 0;
     }
+    .section h1, .section h2 {
+        padding: 0;
+        font-size: 2rem;
+    }
     .contact-wrapper {
         margin: 100px 0 50px 50px;
         padding: 15px;
@@ -23,6 +27,7 @@
     }
     footer h2 {
         text-align: center;
+        font-size: 1.5rem;
     }
     .tz-gallery {
         padding: 10px;
@@ -69,6 +74,12 @@
     #animiSection p {
         padding: 10px;
     }
+    #dddSection {
+        gap: 0;
+    }
+    #dddSection .justify {
+        padding: 10px;
+    }
     .ddd-welcome, .ddd-info, #tattooSection img, .tattoo-pic-txt, .sugaring-welcome figure, .sugaring-info, .stex-pic, .studex {
         grid-column: span 2;
     }
@@ -86,6 +97,9 @@
         grid-column: span 2;
         justify-self: center;
     }
+    .section h1, .section h2 {
+        font-size: 1.5rem;
+    }
     #carouselExampleIndicators {
         width: 80%;
     }
@@ -101,14 +115,16 @@
     .section p {
         padding: 0 10px;
     }
-    .service-cat {
-        grid-template-columns: 65% 1fr;
-    }
     ul {
         padding: 10px;
     }
+    #priceListSection {
+        padding: 10px;
+        gap: 0;
+    }
     .service-cat {
         grid-column: span 2;
+        grid-template-columns: 60% 1fr;
     }
     .service-cat p {
         text-align: left;
