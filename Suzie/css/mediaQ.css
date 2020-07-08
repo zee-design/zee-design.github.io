@@ -3,7 +3,7 @@
         padding: 0 15px 0 0;
     }
     .nav-info a {
-        font-size: 0.85rem;
+        font-size: 1rem;
     }
     #phoneNo {
         justify-self: start;
@@ -47,11 +47,11 @@
     nav {
         height: 140px;
         align-content: center;
-        grid-template-columns: 30% 1fr;
+        grid-template-columns: 40% 1fr;
     }
     .nav-item {
         height: 45px;
-        width: 120px;
+        width: 100px;
     }
     .nav-link, .nav-info a {
         padding: 0;
@@ -107,7 +107,7 @@
 
 @media (max-width: 576px) {
     #navbar {
-        padding: 0 5px 0 0;
+        padding: 0;
     }
     #navbar ul {
         padding: 0;
