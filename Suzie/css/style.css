@@ -210,7 +210,7 @@ span {
 
 .sub-service-cat1, .sub-service-cat2 {
     display: grid;
-    grid-template-columns: 1fr 50%;
+    grid-template-columns: 50% 1fr;
 }
 
 /*#endregion*/
