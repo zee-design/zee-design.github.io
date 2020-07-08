@@ -181,7 +181,7 @@ nav p {
     margin: 0 1%;
     padding: 25px 0 10px 0;
     display: grid;
-    grid-template-columns: 50% 1fr;
+    grid-template-columns: 1fr 50%;
 }
 
 .price-list-cat {
@@ -210,7 +210,7 @@ span {
 
 .sub-service-cat1, .sub-service-cat2 {
     display: grid;
-    grid-template-columns: 50% 1fr;
+    grid-template-columns: 1fr 50%;
 }
 
 /*#endregion*/
