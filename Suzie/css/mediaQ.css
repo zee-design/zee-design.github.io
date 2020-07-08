@@ -124,7 +124,6 @@
     }
     .service-cat {
         grid-column: span 2;
-        grid-template-columns: 60% 1fr;
     }
     .service-cat p {
         text-align: left;
