@@ -147,10 +147,12 @@ nav p {
 .dropdown-item {
     color: black;
     background-color: #ffffff98;
+    font-size: 1.2rem;
 }
 
 .dropdown-item:hover {
-    border: 1px solid #4c69b86b;
+    background-color: #e4c6a1ed;
+    border: 1px solid var(--bar);
 }
 
 .dropdown-item:active {
