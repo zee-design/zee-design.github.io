@@ -37,6 +37,16 @@ p {
     text-align: justify;
 }
 
+#intro-img {
+    height: 80vh;
+    background: url(/Flying/img/intro-pic0.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 150px;
+    background-attachment: fixed;
+}
+
 .home-img {
     min-width: 100%;
 }
@@ -147,7 +157,7 @@ nav a:hover {
 .post {
     display: grid;
     max-width: 1300px;
-    margin: 200px auto auto auto;
+    margin: 40px auto auto auto;
     gap: 10px 50px;
     grid-template-columns: 2fr 12fr 3fr;
 }
@@ -425,7 +435,7 @@ footer {
 @media (max-width: 1000px) {
     .post {
         grid-template-columns: 100px 1fr;
-        margin: 50px 0;
+        margin: 25px 0;
         max-width: 100%;
         gap: 10px 30px;
     }
