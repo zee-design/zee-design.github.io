@@ -42,8 +42,6 @@ p {
     background: url(/Flying/img/intro-pic0.jpg);
     background-size: cover;
     background-position: center;
-    text-align: center;
-    padding-top: 150px;
     background-attachment: fixed;
 }
 
@@ -552,7 +550,7 @@ footer {
 @media (max-width: 575px) {
     #intro-img {
         background-attachment: scroll;
-        height: 40vh;
+        height: 35vh;
     }
     h1 {
         font-size: 40px;
