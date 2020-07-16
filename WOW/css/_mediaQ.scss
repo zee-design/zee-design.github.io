@@ -1,0 +1,19 @@
+@include media-md {
+    .navbar-nav {
+        right: 2rem;
+        top: 0px;
+        background: transparent;
+    }
+    .dropdown {
+        background: transparent;
+    }
+    .nav-item {
+        padding: 0 1rem;
+    }
+    .nav-link, .pl-5 {
+        padding: 0.5rem !important;
+    }
+    .dropdown-menu {
+        margin: 0;
+    }
+}

@@ -1,0 +1,91 @@
+.logo {
+    position: absolute;
+    top: 1.3125rem;
+    left: 1rem;
+    width: 200px;
+    display: grid;
+    grid-template-columns: 31px 1fr;
+    gap: 5px;
+    padding: 0 0 0 20px;
+    text-decoration: none;
+    color: #fff;
+
+    h2 {
+        font-size: 0.85rem;
+        font-weight: normal;
+    }
+}
+
+.navbar-toggler {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    &:hover {
+        background: #3a3a3a44;
+        transition: 0.5s all ease-in-out;
+    }
+}
+
+#myNav {
+    justify-content: flex-end;
+
+    .navbar-nav {
+        position: relative;
+        top: 4rem;
+        background: #151515 url(/WOW/img/bg_texture_dark.png);
+        border-radius: 5px;
+
+        .nav-item:hover {
+            background: #46464638;
+            transition: 0.5s all ease-in-out;
+            border-radius: 5px;
+        }
+
+        .nav-link {
+            font-size: 1.25rem;
+        }
+
+        .dropdown {
+            background: #151515 url(/WOW/img/bg_texture_dark.png);
+        }
+
+        .dropdown-menu {
+            width: 250px;
+            background: #151515 url(/WOW/img/bg_texture_dark.png);
+            margin-left: 1.25rem;
+            border: 1px solid #2b2a2a;
+
+            a {
+                color: #fff;
+                font-size: 20px;
+                width: 240px;
+                height: 50px;
+                padding: 10px;
+                margin: 5px 0;
+                transition: 0.5s all ease-in-out;
+                border-right: 3px solid transparent;
+
+                &:hover{
+                    box-shadow: 0 0 10px #666;
+                    transition: .5s all ease-in-out;
+                    margin-left: 18px;
+                    border-radius: 0 50px 50px 0;
+                    background: #7686a8;
+                    color: #fff;
+                    background: #3a3a3a44
+                    url(/WOW/img/bg_texture_dark.png);
+                }
+            }
+        }
+    }
+}
+
+.active > a {
+    color: rgb(165, 5, 5) !important;
+    font-weight: bolder;
+}
+
+.anchor {
+    margin-top: 74px;
+}

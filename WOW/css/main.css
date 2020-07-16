@@ -1,0 +1,195 @@
+@font-face {
+  font-family: 'friz-quadrata';
+  src: url("../fonts/FrizQuadrataTT.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    right: 2rem;
+    top: 0px;
+    background: transparent;
+  }
+  .dropdown {
+    background: transparent;
+  }
+  .nav-item {
+    padding: 0 1rem;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: 100%;
+  font-family: "Libre Caslon Text", serif;
+  background: #7686a8;
+  background: radial-gradient(circle, #7686a8 0%, #c8c2c4 84%, #d3ced4 100%);
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 74px;
+  background-image: url(/WOW/img/nav_bg.png);
+  z-index: 10;
+}
+
+h1,
+h2,
+a {
+  font-family: "friz-quadrata", serif;
+}
+
+#home {
+  position: relative;
+  top: -2rem;
+}
+
+section {
+  margin-top: 74px;
+}
+
+section img {
+  max-width: 100%;
+}
+
+section p {
+  padding: 10px;
+  text-align: justify;
+}
+
+.logo {
+  position: absolute;
+  top: 1.3125rem;
+  left: 1rem;
+  width: 200px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 31px 1fr;
+      grid-template-columns: 31px 1fr;
+  gap: 5px;
+  padding: 0 0 0 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo h2 {
+  font-size: 0.85rem;
+  font-weight: normal;
+}
+
+.navbar-toggler {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.navbar-toggler:hover {
+  background: #3a3a3a44;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+}
+
+#myNav {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#myNav .navbar-nav {
+  position: relative;
+  top: 4rem;
+  background: #151515 url(/WOW/img/bg_texture_dark.png);
+  border-radius: 5px;
+}
+
+#myNav .navbar-nav .nav-item:hover {
+  background: #46464638;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+  border-radius: 5px;
+}
+
+#myNav .navbar-nav .nav-link {
+  font-size: 1.25rem;
+}
+
+#myNav .navbar-nav .dropdown {
+  background: #151515 url(/WOW/img/bg_texture_dark.png);
+}
+
+#myNav .navbar-nav .dropdown-menu {
+  width: 250px;
+  background: #151515 url(/WOW/img/bg_texture_dark.png);
+  margin-left: 1.25rem;
+  border: 1px solid #2b2a2a;
+}
+
+#myNav .navbar-nav .dropdown-menu a {
+  color: #fff;
+  font-size: 20px;
+  width: 240px;
+  height: 50px;
+  padding: 10px;
+  margin: 5px 0;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+  border-right: 3px solid transparent;
+}
+
+#myNav .navbar-nav .dropdown-menu a:hover {
+  -webkit-box-shadow: 0 0 10px #666;
+          box-shadow: 0 0 10px #666;
+  -webkit-transition: .5s all ease-in-out;
+  transition: .5s all ease-in-out;
+  margin-left: 18px;
+  border-radius: 0 50px 50px 0;
+  background: #7686a8;
+  color: #fff;
+  background: #3a3a3a44 url(/WOW/img/bg_texture_dark.png);
+}
+
+.active > a {
+  color: #a50505 !important;
+  font-weight: bolder;
+}
+
+.anchor {
+  margin-top: 74px;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-nav {
+    right: 2rem;
+    top: 0px;
+    background: transparent;
+  }
+  .dropdown {
+    background: transparent;
+  }
+  .nav-item {
+    padding: 0 1rem;
+  }
+  .nav-link, .pl-5 {
+    padding: 0.5rem !important;
+  }
+  .dropdown-menu {
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */
