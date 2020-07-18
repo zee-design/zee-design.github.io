@@ -94,6 +94,7 @@
     }
     .nav-info {
         grid-template-rows: 80% 1fr;
+        grid-template-rows: 70% 1fr;
         align-self: center;
     }
     .nav-info a, .nav-info p {
