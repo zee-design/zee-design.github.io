@@ -25,10 +25,6 @@ body {
     font-family: procopiusregular;
 }
 
-.dividerPicture {
-    max-width: 100%;
-}
-
 .section {
     width: 85%;
     margin: auto;
@@ -72,7 +68,6 @@ body {
 
 #navbar {
     z-index: 10;
-    
 }
 
 #navbar>* {
@@ -97,6 +92,7 @@ nav {
     display: grid;
     grid-template-columns: 50% 1fr;
     grid-template-rows: 50px;
+    gap: 5px;
     align-items: center;
 }
 
@@ -163,10 +159,26 @@ nav p {
 /*#endregion*/
 
 /*#region----------------------------About----------------------------------------*/
-
+#plax1_1 {
+    max-width: 100vw;
+    height: 80vh;
+    background: url(/Suzie/img/index1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 /*#endregion*/
 
 /*#region---------------------------Price List------------------------------------*/
+#plax1_2 {
+    max-width: 100vw;
+    height: 80vh;
+    background: url(/Suzie/img/index2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 
 #priceListSection {
     display: grid;
@@ -219,6 +231,14 @@ span {
 /*#endregion*/
 
 /*#region---------------------------Products--------------------------------------*/
+#plax1_3 {
+    max-width: 100vw;
+    height: 80vh;
+    background: url(/Suzie/img/index3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
 #productsSection h2 {
     border-bottom: 1px solid #959595;
@@ -253,6 +273,14 @@ span {
 /*#endregion*/
 
 /*#region---------------------------Contact---------------------------------------*/
+#plax1_4 {
+    max-width: 100vw;
+    height: 80vh;
+    background: url(/Suzie/img/index4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
 #contactSection {
     background-image: url(../img/contact.jpg);
@@ -354,6 +382,14 @@ footer h2 {
 /*#endregion*/
 
 /*#region-----------------------------Animi---------------------------------------*/
+#plax2_1 {
+    max-width: 100vw;
+    height: 80vh;
+    background: url(/Suzie/img/animi0.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
 #animiSection {
     display: grid;
@@ -366,7 +402,14 @@ footer h2 {
 /*#endregion*/
 
 /*#region--------------------------Mesotherapy------------------------------------*/
-
+#plax3_1 {
+    max-width: 100vw;
+    height: 80vh;
+    background: url(/Suzie/img/meso0.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 #mesoSection {
     display: grid;
 }
@@ -381,6 +424,14 @@ footer h2 {
 /*#endregion*/
 
 /*#region-------------------------------3D----------------------------------------*/
+#plax4_1 {
+    max-width: 100vw;
+    height: 80vh;
+    background: url(/Suzie/img/3d-00.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
 #dddSection {
     display: grid;
@@ -428,6 +479,14 @@ figcaption {
 /*#endregion*/
 
 /*#region-----------------------------Tattoo--------------------------------------*/
+#plax5_1 {
+    max-width: 100vw;
+    height: 80vh;
+    background: url(/Suzie/img/tattoo-0.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
 #tattooSection {
     margin-top: 50px;
@@ -460,6 +519,14 @@ figcaption {
 /*#endregion*/
 
 /*#region---------------------------Sugaring--------------------------------------*/
+#plax6_1 {
+    max-width: 100vw;
+    height: 80vh;
+    background: url(/Suzie/img/wax0.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
 .sugaring-welcome {
     margin-top: 50px;
@@ -480,6 +547,14 @@ figcaption {
 /*#endregion*/
 
 /*#region----------------------------Studex---------------------------------------*/
+#plax7_1 {
+    max-width: 100vw;
+    height: 80vh;
+    background: url(/Suzie/img/stu0.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
 #studexSection h5 {
     margin-top: 50px;
@@ -523,6 +598,14 @@ figcaption {
 /*#endregion*/
 
 /*#region----------------------------Facial---------------------------------------*/
+#plax8_1 {
+    max-width: 100vw;
+    height: 80vh;
+    background: url(/Suzie/img/facial0.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
 .facialSection .procopius {
     margin-top: 50px;
@@ -548,6 +631,23 @@ figure h4 {
 /*#endregion*/
 
 /*#region---------------------------Make-Up---------------------------------------*/
+#plax9_1 {
+    max-width: 100vw;
+    height: 80vh;
+    background: url(/Suzie/img/m-up00.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#plax9_2 {
+    max-width: 100vw;
+    height: 80vh;
+    background: url(/Suzie/img/m-up0.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
 .makeUp {
     width: 100%;

@@ -93,7 +93,7 @@
         border: 10px groove var(--bar);
     }
     .nav-info {
-        grid-template-rows: 70% 1fr;
+        grid-template-rows: 80% 1fr;
         align-self: center;
     }
     .nav-info a, .nav-info p {
@@ -105,6 +105,9 @@
     }
     #carouselExampleIndicators {
         width: 80%;
+    }
+    #plax1_1, #plax1_2, #plax1_3, #plax1_4, #plax2_1, #plax3_1, #plax4_1, #plax5_1, #plax6_1, #plax7_1, #plax8_1, #plax9_1, #plax9_2 {
+        background-attachment: scroll;
     }
 }
 
