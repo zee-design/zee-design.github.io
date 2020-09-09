@@ -295,11 +295,17 @@ figcaption {
 }
 
 .project-description {
-    display: grid;
     margin: 10px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 5px;
+}
+
+.project-txt {
+    column-count: 2;
+    column-gap: 3em;
+    column-rule-style: ridge;
+    column-rule-color: var(--yellow);
 }
 
 /*#endregion*/
