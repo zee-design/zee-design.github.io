@@ -38,12 +38,21 @@ body {
     font-size: 34px;
 }
 
+.section-header h4 {
+    padding-bottom: 0;
+}
+
 p {
     font-size: 20px;
 }
 
 #aside-photo p {
     font-size: 14px;
+}
+
+a:hover {
+    color: rgba(0,0,0,.7);
+    text-decoration: none;
 }
 
 a, h3 span, footer p {
@@ -154,28 +163,44 @@ span.color {
     visibility: hidden;
 }
 
-#aside-photo {
-    width: 30%;
-    text-align: center;
-    padding: 30px;
+.about-buttons {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1.2em;
 }
 
-#aside-photo p {
+.CV {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+    background: teal;
     padding: 10px;
-    font-style: italic;
+    border-radius: 5px;
+}
+
+.linkedin {
+    width: 50px;
 }
 
 #head-shot {
-    width: 100%;
+    width: 30%;
+    height: 30%;
     border-radius: 50%;
+    float: left;
+    margin: 1em;
     border: 2px solid teal;
+    shape-outside: circle();
+}
+
+#head-p {
+    font-style: italic;
+    text-align: center;
+    font-size: 14px
 }
 
 #about-txt {
-    width: 70%;
-    float: right;
     text-align: justify;
-    padding: 0 50px 50px 30px;
+    padding: 0 30px 30px 30px;
 }
 
 #about p {
@@ -497,22 +522,12 @@ footer p {
     #text-board {
         width: 75%;
     }
-    .about-mediaQ {
-        display: grid;
-    }
-    #aside-photo {
-        width: 80%;
-        padding: 5px;
-        justify-self: center;
+    #head-shot { 
+        width: 45%;
+        height: 45%;
     }
     #about-txt {
-        width: 90%;
-        padding: 5px;
-        justify-self: center;
-    }
-    .projects-txt {
-        margin-bottom: 0;
-        padding-bottom: 0;
+        padding: 0 10px 10px 10px;
     }
     .proj-links button {
         width: 80% !important;
