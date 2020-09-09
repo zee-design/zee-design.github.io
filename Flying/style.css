@@ -37,14 +37,6 @@ p {
     text-align: justify;
 }
 
-#intro-img {
-    height: 80vh;
-    background: url(/Flying/img/intro-pic0.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
 .home-img {
     min-width: 100%;
 }
@@ -94,6 +86,13 @@ hr {
     height: 20px;
     background-image: linear-gradient(to bottom, dimgray, var(--yellow));
     margin: 20px 0 50px 0;
+}
+
+.two-column {
+    column-count: 2;
+    column-gap: 3em;
+    column-rule-style: ridge;
+    column-rule-color: var(--yellow);
 }
 
 /*#endregion*/
@@ -155,7 +154,7 @@ nav a:hover {
 .post {
     display: grid;
     max-width: 1300px;
-    margin: 40px auto auto auto;
+    margin: 200px auto auto auto;
     gap: 10px 50px;
     grid-template-columns: 2fr 12fr 3fr;
 }
@@ -296,20 +295,11 @@ figcaption {
 }
 
 .project-description {
+    display: grid;
     margin: 10px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 5px;
-}
-
-.project-txt {
-    columns: 2 200px;
-    column-gap: 20px;
-}
-
-.project-txt p {
-    font-size: 16px;
-    padding: 20px;
 }
 
 /*#endregion*/
@@ -433,7 +423,7 @@ footer {
 @media (max-width: 1000px) {
     .post {
         grid-template-columns: 100px 1fr;
-        margin: 25px 0;
+        margin: 50px 0;
         max-width: 100%;
         gap: 10px 30px;
     }
@@ -451,7 +441,11 @@ footer {
         padding: 10px;
     }
     p {
-        margin: 15px 100px 15px 15px;
+        margin: 10px;
+    }
+    .two-column {
+        margin-right: 1.5em;
+        column-gap: 2em;
     }
     .tip {
         grid-column: 1;
@@ -514,6 +508,11 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
     }
+    .two-column {
+        column-gap: 1em;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
     .tip {
         display: flex;
         flex-direction: row;
@@ -530,16 +529,13 @@ footer {
     blockquote p {
         padding: 0;
     }
-    p {
-        margin: 0 50px;
-    }
+    
     figure img {
         max-width: 360px;
     }
     .three-pcs {
         display: inline;
     }
-    
 }
 @media (min-width: 576px) {
     .col-sm-9, .col-md-6 {
@@ -548,10 +544,6 @@ footer {
     }
 }
 @media (max-width: 575px) {
-    #intro-img {
-        background-attachment: scroll;
-        height: 35vh;
-    }
     h1 {
         font-size: 40px;
         font-weight: bold;
@@ -559,12 +551,12 @@ footer {
     h2 {
         font-size: 32px;
     }
+    .two-column {
+        column-count: 1;
+    }
     .col-sm-9, .col-md-6 {
         margin: 0 auto;
         padding: 0 5px;
-    }
-    .project-txt {
-        display: block;
     }
 }
 
