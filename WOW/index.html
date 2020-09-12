@@ -8,45 +8,60 @@
 
     <title>Just WOW</title>
 
-    <script src="https://kit.fontawesome.com/4ddb6bba6c.js" crossorigin="anonymous"></script>
-    <!-- Bootstrap CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
 
     <!-- Style sheet -->
     <link rel="stylesheet" href="/WOW/style.css">
+    <link rel="stylesheet" href="/WOW/mobile.Nav.css">
+    <link rel="stylesheet" href="/WOW/mediaQ.css">
 
 </head>
 
 <body>
     <header class="header">
-        <nav class="navbar fixed-top navbar-expand-md scrolling-navbar">
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger">
+                <div></div>
+            </div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">World</a></li>
+                            <li><a href="#">WowHead</a></li>
+                            <li><a href="#">Icy-Veins</a></li>
+                            <li><a href="#">MMO-Champion</a></li>
+                            <li><a href="#">Media</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="nav">
             <a class="logo" href="https://worldofwarcraft.com/en-gb/shadowlands" target="blank">
                 <img src="/WOW/img/index.png" alt="World of Warcraft Logo">
                 <h2 class="h2">To the Official<br> Game Site</h2>
             </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
-                <span class="navbar-toggler-icon">&#9776</span>
-            </button>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#world">World</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="drop-btn">Forums</a>
+                    <div class="dropdown-content">
+                        <a href="#WowHead">WowHead</a>
+                        <a href="#icyV">Icy-Veins</a>
+                        <a href="#mmoCh">MMO-Champion</a>
+                    </div>
+                </li>
+                <li><a href="#media">Media</a></li>
+                </li>
+            </ul>
 
-            <div id="myNav" class="collapse navbar-collapse">
-                <ul class="navbar-nav">
-                    <li class="nav-item gold-under"><a class="nav-link pl-5" href="#home">Home</a></li>
-                    <li class="nav-item gold-under"><a class="nav-link pl-5" href="#world">World</a></li>
-                    <li class="nav-item gold-under dropdown" type="button"><a class="nav-link dropdown-toggle pl-5" href="#"
-                            data-toggle="dropdown">Forums</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#WowHead">WowHead</a>
-                            <a class="dropdown-item" href="#icyV">Icy-Veins</a>
-                            <a class="dropdown-item" href="#mmoCh">MMO-Champion</a>
-                        </div>
-                    </li>
-                    <li class="nav-item gold-under"><a class="nav-link pl-5" href="#media">Media</a></li>
-                    </li>
-                </ul>
-            </div>
         </nav>
     </header>
 
@@ -86,9 +101,6 @@
 
     <!-- Links -->
     <script src="/WOW/js/nav.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
